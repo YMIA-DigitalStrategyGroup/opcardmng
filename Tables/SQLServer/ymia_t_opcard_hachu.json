@@ -195,7 +195,7 @@
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
       "DefaultValue": {
         "$type": "Forguncy.DateObject, ServerDesignerCommon",
-        "Value": "2026-10-29T14:02:27.6"
+        "Value": "2026-10-30T07:54:04.097"
       },
       "DatabaseColumnType": "datetime",
       "MaxLength": -1,
@@ -221,6 +221,13 @@
       "Formula": "YEAR([発注日]) & \"-\" & MONTH([発注日]) & \"-\" & DAY([発注日])",
       "Name": "発生日_式",
       "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "ロット数",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
     }
   ],
   "ExternalDatabaseInfo": {
