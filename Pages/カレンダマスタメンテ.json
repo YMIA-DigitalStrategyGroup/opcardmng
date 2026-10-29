@@ -1,0 +1,1482 @@
+{
+  "Rows": {
+    "InLogicalVisibleIndexes": [
+      0,
+      1
+    ],
+    "Count": 31
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      11,
+      12,
+      25,
+      26,
+      39,
+      40
+    ],
+    "Count": 43
+  },
+  "Values": {
+    "0,1": "現在日",
+    "0,13": "設定日FR",
+    "0,22": "設定日FR",
+    "0,31": "設定日FR",
+    "1,1": "設定月",
+    "1,13": "設定日TO",
+    "1,22": "設定日TO",
+    "1,31": "設定日TO",
+    "3,1": "設定月",
+    "6,2": "当月",
+    "6,16": "翌月",
+    "6,30": "翌々月",
+    "7,2": "休日",
+    "7,8": "曜日",
+    "7,16": "休日",
+    "7,22": "曜日",
+    "7,30": "休日",
+    "7,36": "曜日",
+    "8,11": 0,
+    "8,12": 0,
+    "8,25": 0,
+    "8,26": 0,
+    "8,39": 0,
+    "8,40": 0,
+    "25,1": "休日追加",
+    "25,15": "休日追加",
+    "25,29": "休日追加",
+    "28,1": "更新"
+  },
+  "Formulas": {
+    "0,5": "TODAY()",
+    "3,9": "TEXT(F2,\"yyyyMM\")",
+    "8,8": "TEXT(C9,\"aaa\")",
+    "1,35": "TEXT(EDATE(AJ1,1)-1,\"yyyy/MM/dd\")",
+    "1,26": "TEXT(EDATE(AA1,1)-1,\"yyyy/MM/dd\")",
+    "0,35": "TEXT(EDATE(F2,2),\"yyyy/MM/1\")",
+    "0,26": "TEXT(EDATE(F2,1),\"yyyy/MM/1\")",
+    "1,17": "TEXT(EDATE(R1,1)-1,\"yyyy/MM/dd\")",
+    "8,36": "TEXT(AE9,\"aaa\")",
+    "8,22": "TEXT(Q9,\"aaa\")",
+    "0,17": "TEXT(F2,\"yyyy/mm/1\")"
+  },
+  "AttachInfos": {
+    "0,17": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "0,26": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "0,35": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "1,5": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "CellDefaultValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=カレンダマスタメンテ!F1"
+        },
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "1,17": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "1,26": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "1,35": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "3,21": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=カレンダマスタメンテ!F2"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=EDATE(カレンダマスタメンテ!F2,-1)"
+                }
+              }
+            ]
+          }
+        ],
+        "TemplateKey": "_RS_Normal_Style2",
+        "Icon": {
+          "Name": "Arrow/291_left_arrow_2.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "3,29": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=カレンダマスタメンテ!F2"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=EDATE(カレンダマスタメンテ!F2,1)"
+                }
+              }
+            ]
+          }
+        ],
+        "TemplateKey": "_RS_Normal_Style2",
+        "Icon": {
+          "Name": "Arrow/292_move_next_3.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "7,1": {
+      "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "mcalendarm",
+        "RowIndex": 7,
+        "ColumnIndex": 1,
+        "RowCount": 18,
+        "ColumnCount": 13,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 3,
+              "ColumnBindingInfo": {
+                "TableName": "mcalendarm",
+                "ColumnName": "HOLIDAY",
+                "GUID": "04f578b6-0f4e-4800-884b-46e6c4e963da"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=カレンダマスタメンテ!R1"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 5,
+              "ColumnBindingInfo": {
+                "TableName": "mcalendarm",
+                "ColumnName": "HOLIDAY",
+                "GUID": "4fe204da-4b62-4fbc-a513-f0f8b4e93130"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=カレンダマスタメンテ!R2"
+              }
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "CurrentRowChangedCommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "リストビュー1",
+            "UpdateType": 6,
+            "UpdateListviewCommandRunTimeMethodSetting": {
+              "MethodName": "GetCurrentRowIndex",
+              "RetrunParamNames": {
+                "RowIndex": {
+                  "SerializeProperty": "行番号"
+                }
+              }
+            },
+            "Disabled": true
+          },
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "リストビュー1",
+            "UpdateType": 6,
+            "UpdateListviewCommandRunTimeMethodSetting": {
+              "MethodName": "SetText",
+              "ParameterValues": {
+                "rowIndex": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=カレンダマスタメンテ!行番号"
+                },
+                "columnIndexOrName": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=カレンダマスタメンテ!L9"
+                },
+                "text": "0"
+              }
+            },
+            "Disabled": true
+          }
+        ],
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "ShowDeleteButton": true,
+        "IsSingleSelection": true,
+        "RowHeaderContextMenu": {
+          "ContextMenuItems": [
+            {
+              "Text": "挿入",
+              "OperationType": 2
+            },
+            {
+              "Text": "削除",
+              "Visible": true,
+              "OperationType": 3
+            },
+            {
+              "Text": "複製",
+              "OperationType": 4
+            }
+          ]
+        },
+        "ColumnOperation": 2,
+        "CommitType": 1
+      }
+    },
+    "7,15": {
+      "ListViewInfo": {
+        "Name": "リストビュー2",
+        "TableName": "mcalendarm",
+        "RowIndex": 7,
+        "ColumnIndex": 15,
+        "RowCount": 18,
+        "ColumnCount": 13,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 3,
+              "ColumnBindingInfo": {
+                "TableName": "mcalendarm",
+                "ColumnName": "HOLIDAY",
+                "GUID": "123494d2-fef4-4a47-a7dc-4a09e391e3b5"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=カレンダマスタメンテ!AA1"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 5,
+              "ColumnBindingInfo": {
+                "TableName": "mcalendarm",
+                "ColumnName": "HOLIDAY",
+                "GUID": "0a8cebe0-5f22-4c34-90d3-17e958a29412"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=カレンダマスタメンテ!AA2"
+              }
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "ShowDeleteButton": true,
+        "RowHeaderContextMenu": {
+          "ContextMenuItems": [
+            {
+              "Text": "挿入",
+              "OperationType": 2
+            },
+            {
+              "Text": "削除",
+              "Visible": true,
+              "OperationType": 3
+            },
+            {
+              "Text": "複製",
+              "OperationType": 4
+            }
+          ]
+        },
+        "ColumnOperation": 2,
+        "CommitType": 1
+      }
+    },
+    "7,29": {
+      "ListViewInfo": {
+        "Name": "リストビュー3",
+        "TableName": "mcalendarm",
+        "RowIndex": 7,
+        "ColumnIndex": 29,
+        "RowCount": 18,
+        "ColumnCount": 13,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "SubConditions": [
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 3,
+              "ColumnBindingInfo": {
+                "TableName": "mcalendarm",
+                "ColumnName": "HOLIDAY",
+                "GUID": "df32cdf3-91ce-4652-b29f-b408edb0d934"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=カレンダマスタメンテ!AJ1"
+              }
+            },
+            {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 5,
+              "ColumnBindingInfo": {
+                "TableName": "mcalendarm",
+                "ColumnName": "HOLIDAY",
+                "GUID": "0475e2d4-6e7f-4a22-b298-0200e45c4893"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=カレンダマスタメンテ!AJ2"
+              }
+            }
+          ]
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "ShowDeleteButton": true,
+        "RowHeaderContextMenu": {
+          "ContextMenuItems": [
+            {
+              "Text": "挿入",
+              "OperationType": 2
+            },
+            {
+              "Text": "削除",
+              "Visible": true,
+              "OperationType": 3
+            },
+            {
+              "Text": "複製",
+              "OperationType": 4
+            }
+          ]
+        },
+        "ColumnOperation": 2,
+        "CommitType": 1
+      }
+    },
+    "8,2": {
+      "BindingInfo": {
+        "TableName": "mcalendarm",
+        "ColumnName": "HOLIDAY",
+        "GUID": "0d8477c0-d380-4f96-91f7-4a43ed2e18ff"
+      }
+    },
+    "8,11": {
+      "BindingInfo": {
+        "TableName": "mcalendarm",
+        "ColumnName": "KIGYO_CODE",
+        "GUID": "a209488e-62ed-4787-9652-7e2a2c3dc88c"
+      }
+    },
+    "8,12": {
+      "BindingInfo": {
+        "TableName": "mcalendarm",
+        "ColumnName": "TORIHIKISAKI_CODE",
+        "GUID": "6d572837-29a0-47db-81cb-43c1d5b893fc"
+      }
+    },
+    "8,16": {
+      "BindingInfo": {
+        "TableName": "mcalendarm",
+        "ColumnName": "HOLIDAY",
+        "GUID": "6fc193e7-45b6-4059-b028-3fa08a1aea19"
+      }
+    },
+    "8,25": {
+      "BindingInfo": {
+        "TableName": "mcalendarm",
+        "ColumnName": "KIGYO_CODE",
+        "GUID": "11872dc4-bd32-4457-95b4-25969c203f79"
+      }
+    },
+    "8,26": {
+      "BindingInfo": {
+        "TableName": "mcalendarm",
+        "ColumnName": "TORIHIKISAKI_CODE",
+        "GUID": "8b2e395a-6b9c-4209-9e1e-4ae61a6c95f6"
+      }
+    },
+    "8,30": {
+      "BindingInfo": {
+        "TableName": "mcalendarm",
+        "ColumnName": "HOLIDAY",
+        "GUID": "e935012d-9f01-461c-94b0-dcc1bfd73a85"
+      }
+    },
+    "8,39": {
+      "BindingInfo": {
+        "TableName": "mcalendarm",
+        "ColumnName": "KIGYO_CODE",
+        "GUID": "2d30e021-a50a-4a40-9984-7cdf050a940b"
+      }
+    },
+    "8,40": {
+      "BindingInfo": {
+        "TableName": "mcalendarm",
+        "ColumnName": "TORIHIKISAKI_CODE",
+        "GUID": "891cda61-9b80-4f93-b610-9d5a3a59b42e"
+      }
+    },
+    "25,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "リストビュー1",
+            "UpdateType": 1,
+            "UpdateValues": [
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=カレンダマスタメンテ!C9"
+                }
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=カレンダマスタメンテ!L9"
+                },
+                "Value": "0"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=カレンダマスタメンテ!M9"
+                },
+                "Value": "0"
+              }
+            ]
+          }
+        ],
+        "Text": "休日追加",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "25,15": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "リストビュー2",
+            "UpdateType": 1,
+            "UpdateValues": [
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=カレンダマスタメンテ!Q9"
+                }
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=カレンダマスタメンテ!Z9"
+                },
+                "Value": "0"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=カレンダマスタメンテ!AA9"
+                },
+                "Value": "0"
+              }
+            ]
+          }
+        ],
+        "Text": "休日追加",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "25,29": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "リストビュー3",
+            "UpdateType": 1,
+            "UpdateValues": [
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=カレンダマスタメンテ!AE9"
+                }
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=カレンダマスタメンテ!AN9"
+                },
+                "Value": "0"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=カレンダマスタメンテ!AO9"
+                },
+                "Value": "0"
+              }
+            ]
+          }
+        ],
+        "Text": "休日追加",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "28,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+            "LoopInfo": {
+              "$type": "Forguncy.Model.ListviewKindLoopInfo, ServerDesignerCommon",
+              "ListviewName": "リストビュー1"
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+                "ListviewName": "リストビュー1",
+                "UpdateType": 6,
+                "UpdateListviewCommandRunTimeMethodSetting": {
+                  "MethodName": "SetValue",
+                  "ParameterValues": {
+                    "rowIndex": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=カレンダマスタメンテ!L9"
+                    },
+                    "columnIndexOrName": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=カレンダマスタメンテ!L9"
+                    },
+                    "value": "o"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": "カレンダ情報を更新しますか？",
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+                    "ListviewName": "リストビュー1",
+                    "UpdateType": 3
+                  },
+                  {
+                    "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+                    "ListviewName": "リストビュー2",
+                    "UpdateType": 3
+                  },
+                  {
+                    "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+                    "ListviewName": "リストビュー3",
+                    "UpdateType": 3
+                  },
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "休日カレンダを更新しました！！"
+                  }
+                ],
+                "ID": "7ce32156-2787-4ac1-aeeb-e1a043c60def"
+              }
+            ]
+          }
+        ],
+        "Text": "更新",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "Formatter": 1
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 2
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332,
+        "Formatter": 1
+      },
+      {
+        "Background": 3,
+        "FontSize": 18.666666666666664,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 18.666666666666664,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": 5,
+        "HorizontalAlignment": 6
+      },
+      {
+        "Background": 5,
+        "FontFamily": 0,
+        "HorizontalAlignment": 6
+      },
+      {
+        "Background": 5,
+        "FontFamily": 0,
+        "Formatter": 2,
+        "HorizontalAlignment": 6
+      },
+      {
+        "FontSize": 18.666666666666664
+      },
+      {
+        "FontSize": 18.666666666666664,
+        "HorizontalAlignment": 6
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 18.666666666666664
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 18.666666666666664,
+        "Formatter": 2
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 18.666666666666664,
+        "Formatter": 2,
+        "HorizontalAlignment": 6
+      },
+      {
+        "FontSize": 18.666666666666664,
+        "Formatter": 1,
+        "HorizontalAlignment": 7
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 18.666666666666664,
+        "Formatter": 1,
+        "HorizontalAlignment": 7
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 18.666666666666664,
+        "HorizontalAlignment": 6
+      },
+      {
+        "Background": 5,
+        "Foreground": 4
+      },
+      {
+        "Background": 5,
+        "FontFamily": 0,
+        "Foreground": 4
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "yyyy/m/d",
+        "[AUTO]General",
+        "Accent 1 80",
+        "black",
+        "Accent 2 80",
+        "Center",
+        "Right"
+      ],
+      "Borders": [
+        {
+          "Color": 4
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,5": 0,
+      "0,6": 1,
+      "0,7": 1,
+      "0,8": 1,
+      "0,13": 2,
+      "0,14": 1,
+      "0,15": 1,
+      "0,16": 1,
+      "0,17": 3,
+      "0,18": 1,
+      "0,19": 1,
+      "0,20": 1,
+      "0,22": 2,
+      "0,23": 1,
+      "0,24": 1,
+      "0,25": 1,
+      "0,26": 3,
+      "0,27": 1,
+      "0,28": 1,
+      "0,29": 1,
+      "0,31": 2,
+      "0,32": 1,
+      "0,33": 1,
+      "0,34": 1,
+      "0,35": 3,
+      "0,36": 1,
+      "0,37": 1,
+      "0,38": 1,
+      "0,39": 3,
+      "0,40": 3,
+      "0,41": 3,
+      "1,1": 2,
+      "1,2": 1,
+      "1,3": 1,
+      "1,4": 1,
+      "1,5": 0,
+      "1,13": 2,
+      "1,14": 1,
+      "1,15": 1,
+      "1,16": 1,
+      "1,17": 3,
+      "1,18": 1,
+      "1,19": 1,
+      "1,20": 1,
+      "1,22": 2,
+      "1,23": 1,
+      "1,24": 1,
+      "1,25": 1,
+      "1,26": 3,
+      "1,27": 1,
+      "1,28": 1,
+      "1,29": 1,
+      "1,31": 2,
+      "1,32": 1,
+      "1,33": 1,
+      "1,34": 1,
+      "1,35": 3,
+      "1,36": 1,
+      "1,37": 1,
+      "1,38": 1,
+      "1,39": 3,
+      "1,40": 3,
+      "1,41": 3,
+      "3,1": 4,
+      "3,2": 5,
+      "3,3": 5,
+      "3,4": 5,
+      "3,5": 5,
+      "3,6": 5,
+      "3,7": 5,
+      "3,8": 5,
+      "3,9": 6,
+      "3,10": 5,
+      "3,11": 5,
+      "3,12": 7,
+      "3,13": 7,
+      "3,14": 7,
+      "3,15": 7,
+      "3,16": 7,
+      "3,17": 7,
+      "3,18": 7,
+      "3,29": 1,
+      "3,30": 1,
+      "3,31": 1,
+      "4,1": 5,
+      "4,2": 5,
+      "4,3": 5,
+      "4,4": 5,
+      "4,5": 5,
+      "4,6": 5,
+      "4,7": 5,
+      "4,8": 5,
+      "4,9": 7,
+      "4,10": 5,
+      "4,11": 5,
+      "4,12": 7,
+      "4,13": 7,
+      "4,14": 7,
+      "4,15": 7,
+      "4,16": 7,
+      "4,17": 7,
+      "4,18": 7,
+      "4,29": 1,
+      "4,30": 1,
+      "4,31": 1,
+      "6,2": 8,
+      "6,16": 9,
+      "6,17": 1,
+      "6,18": 1,
+      "6,19": 1,
+      "6,20": 1,
+      "6,21": 1,
+      "6,22": 1,
+      "6,23": 1,
+      "6,24": 1,
+      "6,30": 10,
+      "6,31": 1,
+      "6,32": 1,
+      "6,33": 1,
+      "6,34": 1,
+      "6,35": 1,
+      "6,36": 1,
+      "6,37": 1,
+      "6,38": 1,
+      "7,1": 11,
+      "7,2": 11,
+      "7,8": 12,
+      "7,11": 11,
+      "7,12": 11,
+      "7,13": 11,
+      "7,15": 13,
+      "7,16": 14,
+      "7,17": 1,
+      "7,18": 1,
+      "7,19": 1,
+      "7,20": 1,
+      "7,21": 1,
+      "7,22": 15,
+      "7,23": 1,
+      "7,24": 1,
+      "7,25": 14,
+      "7,26": 11,
+      "7,27": 11,
+      "7,29": 13,
+      "7,30": 14,
+      "7,31": 1,
+      "7,32": 1,
+      "7,33": 1,
+      "7,34": 1,
+      "7,35": 1,
+      "7,36": 15,
+      "7,37": 1,
+      "7,38": 1,
+      "7,39": 14,
+      "7,40": 11,
+      "7,41": 11,
+      "8,1": 11,
+      "8,2": 16,
+      "8,8": 12,
+      "8,11": 11,
+      "8,12": 11,
+      "8,13": 11,
+      "8,15": 13,
+      "8,16": 17,
+      "8,17": 1,
+      "8,18": 1,
+      "8,19": 1,
+      "8,20": 1,
+      "8,21": 1,
+      "8,22": 18,
+      "8,23": 1,
+      "8,24": 1,
+      "8,25": 14,
+      "8,26": 11,
+      "8,27": 11,
+      "8,29": 13,
+      "8,30": 17,
+      "8,31": 1,
+      "8,32": 1,
+      "8,33": 1,
+      "8,34": 1,
+      "8,35": 1,
+      "8,36": 18,
+      "8,37": 1,
+      "8,38": 1,
+      "8,39": 14,
+      "8,40": 11,
+      "8,41": 11,
+      "9,15": 1,
+      "9,16": 1,
+      "9,17": 1,
+      "9,18": 1,
+      "9,19": 1,
+      "9,20": 1,
+      "9,21": 1,
+      "9,22": 1,
+      "9,23": 1,
+      "9,24": 1,
+      "9,25": 1,
+      "9,29": 1,
+      "9,30": 1,
+      "9,31": 1,
+      "9,32": 1,
+      "9,33": 1,
+      "9,34": 1,
+      "9,35": 1,
+      "9,36": 1,
+      "9,37": 1,
+      "9,38": 1,
+      "9,39": 1,
+      "10,15": 1,
+      "10,16": 1,
+      "10,17": 1,
+      "10,18": 1,
+      "10,19": 1,
+      "10,20": 1,
+      "10,21": 1,
+      "10,22": 1,
+      "10,23": 1,
+      "10,24": 1,
+      "10,25": 1,
+      "10,29": 1,
+      "10,30": 1,
+      "10,31": 1,
+      "10,32": 1,
+      "10,33": 1,
+      "10,34": 1,
+      "10,35": 1,
+      "10,36": 1,
+      "10,37": 1,
+      "10,38": 1,
+      "10,39": 1,
+      "11,15": 1,
+      "11,16": 1,
+      "11,17": 1,
+      "11,18": 1,
+      "11,19": 1,
+      "11,20": 1,
+      "11,21": 1,
+      "11,22": 1,
+      "11,23": 1,
+      "11,24": 1,
+      "11,25": 1,
+      "11,29": 1,
+      "11,30": 1,
+      "11,31": 1,
+      "11,32": 1,
+      "11,33": 1,
+      "11,34": 1,
+      "11,35": 1,
+      "11,36": 1,
+      "11,37": 1,
+      "11,38": 1,
+      "11,39": 1,
+      "12,15": 1,
+      "12,16": 1,
+      "12,17": 1,
+      "12,18": 1,
+      "12,19": 1,
+      "12,20": 1,
+      "12,21": 1,
+      "12,22": 1,
+      "12,23": 1,
+      "12,24": 1,
+      "12,25": 1,
+      "12,29": 1,
+      "12,30": 1,
+      "12,31": 1,
+      "12,32": 1,
+      "12,33": 1,
+      "12,34": 1,
+      "12,35": 1,
+      "12,36": 1,
+      "12,37": 1,
+      "12,38": 1,
+      "12,39": 1,
+      "13,15": 1,
+      "13,16": 1,
+      "13,17": 1,
+      "13,18": 1,
+      "13,19": 1,
+      "13,20": 1,
+      "13,21": 1,
+      "13,22": 1,
+      "13,23": 1,
+      "13,24": 1,
+      "13,25": 1,
+      "13,29": 1,
+      "13,30": 1,
+      "13,31": 1,
+      "13,32": 1,
+      "13,33": 1,
+      "13,34": 1,
+      "13,35": 1,
+      "13,36": 1,
+      "13,37": 1,
+      "13,38": 1,
+      "13,39": 1,
+      "14,15": 1,
+      "14,16": 1,
+      "14,17": 1,
+      "14,18": 1,
+      "14,19": 1,
+      "14,20": 1,
+      "14,21": 1,
+      "14,22": 1,
+      "14,23": 1,
+      "14,24": 1,
+      "14,25": 1,
+      "14,29": 1,
+      "14,30": 1,
+      "14,31": 1,
+      "14,32": 1,
+      "14,33": 1,
+      "14,34": 1,
+      "14,35": 1,
+      "14,36": 1,
+      "14,37": 1,
+      "14,38": 1,
+      "14,39": 1,
+      "15,15": 1,
+      "15,16": 1,
+      "15,17": 1,
+      "15,18": 1,
+      "15,19": 1,
+      "15,20": 1,
+      "15,21": 1,
+      "15,22": 1,
+      "15,23": 1,
+      "15,24": 1,
+      "15,25": 1,
+      "15,29": 1,
+      "15,30": 1,
+      "15,31": 1,
+      "15,32": 1,
+      "15,33": 1,
+      "15,34": 1,
+      "15,35": 1,
+      "15,36": 1,
+      "15,37": 1,
+      "15,38": 1,
+      "15,39": 1,
+      "16,15": 1,
+      "16,16": 1,
+      "16,17": 1,
+      "16,18": 1,
+      "16,19": 1,
+      "16,20": 1,
+      "16,21": 1,
+      "16,22": 1,
+      "16,23": 1,
+      "16,24": 1,
+      "16,25": 1,
+      "16,29": 1,
+      "16,30": 1,
+      "16,31": 1,
+      "16,32": 1,
+      "16,33": 1,
+      "16,34": 1,
+      "16,35": 1,
+      "16,36": 1,
+      "16,37": 1,
+      "16,38": 1,
+      "16,39": 1,
+      "17,15": 1,
+      "17,16": 1,
+      "17,17": 1,
+      "17,18": 1,
+      "17,19": 1,
+      "17,20": 1,
+      "17,21": 1,
+      "17,22": 1,
+      "17,23": 1,
+      "17,24": 1,
+      "17,25": 1,
+      "17,29": 1,
+      "17,30": 1,
+      "17,31": 1,
+      "17,32": 1,
+      "17,33": 1,
+      "17,34": 1,
+      "17,35": 1,
+      "17,36": 1,
+      "17,37": 1,
+      "17,38": 1,
+      "17,39": 1,
+      "18,15": 1,
+      "18,16": 1,
+      "18,17": 1,
+      "18,18": 1,
+      "18,19": 1,
+      "18,20": 1,
+      "18,21": 1,
+      "18,22": 1,
+      "18,23": 1,
+      "18,24": 1,
+      "18,25": 1,
+      "18,29": 1,
+      "18,30": 1,
+      "18,31": 1,
+      "18,32": 1,
+      "18,33": 1,
+      "18,34": 1,
+      "18,35": 1,
+      "18,36": 1,
+      "18,37": 1,
+      "18,38": 1,
+      "18,39": 1,
+      "19,15": 1,
+      "19,16": 1,
+      "19,17": 1,
+      "19,18": 1,
+      "19,19": 1,
+      "19,20": 1,
+      "19,21": 1,
+      "19,22": 1,
+      "19,23": 1,
+      "19,24": 1,
+      "19,25": 1,
+      "19,29": 1,
+      "19,30": 1,
+      "19,31": 1,
+      "19,32": 1,
+      "19,33": 1,
+      "19,34": 1,
+      "19,35": 1,
+      "19,36": 1,
+      "19,37": 1,
+      "19,38": 1,
+      "19,39": 1,
+      "20,15": 1,
+      "20,16": 1,
+      "20,17": 1,
+      "20,18": 1,
+      "20,19": 1,
+      "20,20": 1,
+      "20,21": 1,
+      "20,22": 1,
+      "20,23": 1,
+      "20,24": 1,
+      "20,25": 1,
+      "20,29": 1,
+      "20,30": 1,
+      "20,31": 1,
+      "20,32": 1,
+      "20,33": 1,
+      "20,34": 1,
+      "20,35": 1,
+      "20,36": 1,
+      "20,37": 1,
+      "20,38": 1,
+      "20,39": 1,
+      "21,15": 1,
+      "21,16": 1,
+      "21,17": 1,
+      "21,18": 1,
+      "21,19": 1,
+      "21,20": 1,
+      "21,21": 1,
+      "21,22": 1,
+      "21,23": 1,
+      "21,24": 1,
+      "21,25": 1,
+      "21,29": 1,
+      "21,30": 1,
+      "21,31": 1,
+      "21,32": 1,
+      "21,33": 1,
+      "21,34": 1,
+      "21,35": 1,
+      "21,36": 1,
+      "21,37": 1,
+      "21,38": 1,
+      "21,39": 1,
+      "22,15": 1,
+      "22,16": 1,
+      "22,17": 1,
+      "22,18": 1,
+      "22,19": 1,
+      "22,20": 1,
+      "22,21": 1,
+      "22,22": 1,
+      "22,23": 1,
+      "22,24": 1,
+      "22,25": 1,
+      "22,29": 1,
+      "22,30": 1,
+      "22,31": 1,
+      "22,32": 1,
+      "22,33": 1,
+      "22,34": 1,
+      "22,35": 1,
+      "22,36": 1,
+      "22,37": 1,
+      "22,38": 1,
+      "22,39": 1,
+      "23,15": 1,
+      "23,16": 1,
+      "23,17": 1,
+      "23,18": 1,
+      "23,19": 1,
+      "23,20": 1,
+      "23,21": 1,
+      "23,22": 1,
+      "23,23": 1,
+      "23,24": 1,
+      "23,25": 1,
+      "23,29": 1,
+      "23,30": 1,
+      "23,31": 1,
+      "23,32": 1,
+      "23,33": 1,
+      "23,34": 1,
+      "23,35": 1,
+      "23,36": 1,
+      "23,37": 1,
+      "23,38": 1,
+      "23,39": 1,
+      "24,15": 1,
+      "24,16": 1,
+      "24,17": 1,
+      "24,18": 1,
+      "24,19": 1,
+      "24,20": 1,
+      "24,21": 1,
+      "24,22": 1,
+      "24,23": 1,
+      "24,24": 1,
+      "24,25": 1,
+      "24,29": 1,
+      "24,30": 1,
+      "24,31": 1,
+      "24,32": 1,
+      "24,33": 1,
+      "24,34": 1,
+      "24,35": 1,
+      "24,36": 1,
+      "24,37": 1,
+      "24,38": 1,
+      "24,39": 1,
+      "25,1": 19,
+      "25,15": 20,
+      "25,16": 1,
+      "25,17": 1,
+      "25,18": 1,
+      "25,19": 1,
+      "25,20": 1,
+      "25,21": 1,
+      "25,22": 1,
+      "25,23": 1,
+      "25,24": 1,
+      "25,25": 1,
+      "25,26": 1,
+      "25,27": 1,
+      "25,29": 20,
+      "25,30": 1,
+      "25,31": 1,
+      "25,32": 1,
+      "25,33": 1,
+      "25,34": 1,
+      "25,35": 1,
+      "25,36": 1,
+      "25,37": 1,
+      "25,38": 1,
+      "25,39": 1,
+      "25,40": 1,
+      "25,41": 1,
+      "26,15": 1,
+      "26,16": 1,
+      "26,17": 1,
+      "26,18": 1,
+      "26,19": 1,
+      "26,20": 1,
+      "26,21": 1,
+      "26,22": 1,
+      "26,23": 1,
+      "26,24": 1,
+      "26,25": 1,
+      "26,26": 1,
+      "26,27": 1,
+      "26,29": 1,
+      "26,30": 1,
+      "26,31": 1,
+      "26,32": 1,
+      "26,33": 1,
+      "26,34": 1,
+      "26,35": 1,
+      "26,36": 1,
+      "26,37": 1,
+      "26,38": 1,
+      "26,39": 1,
+      "26,40": 1,
+      "26,41": 1,
+      "28,1": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "0,1,1,4",
+    "0,5,1,4",
+    "1,1,1,4",
+    "1,5,1,4",
+    "0,13,1,4",
+    "1,13,1,4",
+    "0,17,1,4",
+    "1,17,1,4",
+    "3,1,2,8",
+    "3,9,2,10",
+    "3,21,2,3",
+    "0,22,1,4",
+    "1,22,1,4",
+    "0,26,1,4",
+    "0,31,1,4",
+    "1,31,1,4",
+    "0,35,1,4",
+    "8,2,1,6",
+    "8,16,1,6",
+    "8,22,1,3",
+    "1,26,1,4",
+    "1,35,1,4",
+    "6,2,1,11",
+    "6,16,1,9",
+    "8,30,1,6",
+    "8,36,1,3",
+    "6,30,1,9",
+    "3,29,2,3",
+    "8,8,1,3",
+    "3,35,1,4",
+    "25,1,2,13",
+    "25,15,2,13",
+    "25,29,2,13",
+    "28,1,2,13",
+    "9,1,16,13",
+    "9,15,16,13",
+    "9,29,16,13",
+    "7,2,1,6",
+    "7,8,1,3",
+    "7,16,1,6",
+    "7,22,1,3",
+    "7,30,1,6",
+    "7,36,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "発注管理画面",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//ZB+DHnSQpIT3t0GJ1Aynb9iujJ9SzizhlYqCVlSLwYIyB2wARjsXCK7ETDWlhf7NyAJAT1McrVTtwLN8pZwTnBpfnVwQnZ38HR78yEB2Wm2wQetRnxTReL6Xj7JZNcbC9MQwO2kI9hOnDptx+XY/SJ68JMHHy4oUVcUf2G/0RkNjTWGsr9hJ2o+vsUQ7lsdX/KiX/3bYgTiRhgE3/vUc7RCYUUoAZJTwrTmS0srbnjNfOryzdXT/ohFBPlK9S0wDvK+f9Jhf+7C2XNasJm82+ixAbEloz42Z3I4pNTApqLTW85VOPKRkfJ44BSn0tihnffd8LKWsUwkhq5c/bV5sFG5mhtGaPfAkhX8sxF21ZqH0N1bdiSLeFRpvecs6rytSVghiUIT5uQ6sorIf/3ZaNWOm5m95PDZpgGbGTEeZupjKSaTiW2cx0naNKtnc/COlvcymbriLChhzlcwHcSF4S+uJ93ExufjbD2pweDnHmfBHK6n+yQ6qVa4oBDv1XB3Obo3WbE5/9pJd0r5kK1LQ56O6rbvC1HvE/c3oMhAvWG8CJin6kPUDAXBodgZfGQJ5EmdDYpWwM+8RC3wipqPwj7HeWA3XRSOnaKsrqAyswKNJu1/yQNn9KPzf//b8hQdD0pqzYIJkd7qugDDKIfi0dG9OZY8eQjphM0O+ys/IJIM9HMvZGXWa9g8w/6SmLPaX6v0M1OwSPmmzxlvvlItayan6eP4tbQFjGFRujKtd5sBIO1J7hV0+oj4KS3cB95IcmeklulAv/IDb2aQKLcUieDvsBAiXv/0O59sQwqixwPcgEGVVuDQsumT27jBgU3creR4VurJ3QBqYEd4NV8ctm2GOXYrLOiheRl8GjSPMlBSchWpgy6hUp6vVJFkQZ4PzyRMH6kOkiO/96TLrgnzILg==|920

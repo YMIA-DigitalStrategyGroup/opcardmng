@@ -1,0 +1,162 @@
+{
+  "Rows": {
+    "Count": 45
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "AttachInfos": {
+    "1,1": {
+      "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "ymia_t_opcard_hachu",
+        "RowIndex": 1,
+        "ColumnIndex": 1,
+        "RowCount": 24,
+        "ColumnCount": 49,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "ymia_t_opcard_hachu",
+            "ColumnName": "ステータス",
+            "GUID": "704ff86d-b1b8-425b-a680-46181fecba04"
+          },
+          "Value": "未処理"
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "2,1": {
+      "NameUsedInJavaScript": "部品コード",
+      "BindingInfo": {
+        "TableName": "ymia_t_opcard_hachu",
+        "ColumnName": "部品コード",
+        "GUID": "0d89d582-8c23-42f3-9023-689904286fd4"
+      }
+    },
+    "2,5": {
+      "NameUsedInJavaScript": "部品名称",
+      "BindingInfo": {
+        "TableName": "ymia_t_opcard_hachu",
+        "ColumnName": "部品名称",
+        "GUID": "0aabf541-5e01-4725-ab93-dd00daf417d3"
+      }
+    },
+    "2,9": {
+      "NameUsedInJavaScript": "発注数",
+      "BindingInfo": {
+        "TableName": "ymia_t_opcard_hachu",
+        "ColumnName": "発注数",
+        "GUID": "11fe2999-5726-4860-aea3-e345966cb733"
+      }
+    },
+    "2,13": {
+      "NameUsedInJavaScript": "発注日",
+      "BindingInfo": {
+        "TableName": "ymia_t_opcard_hachu",
+        "ColumnName": "発注日",
+        "GUID": "98b90d5e-0f86-4cd9-a7dc-ed490ed349fb"
+      }
+    },
+    "2,17": {
+      "NameUsedInJavaScript": "希望納期",
+      "BindingInfo": {
+        "TableName": "ymia_t_opcard_hachu",
+        "ColumnName": "希望納期",
+        "GUID": "c0f3ebea-3a93-44b3-971f-8e9b509b72f3"
+      }
+    },
+    "2,21": {
+      "BindingInfo": {
+        "TableName": "ymia_t_opcard_hachu",
+        "ColumnName": "仕入先コード",
+        "GUID": "cbf53a05-2208-4f6f-a629-f5abccc221af"
+      }
+    },
+    "2,25": {
+      "BindingInfo": {
+        "TableName": "ymia_t_opcard_hachu",
+        "ColumnName": "仕入先名称",
+        "GUID": "dac2289f-77d2-40ff-b18a-407fc33852f7"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "2,9": 0,
+      "2,10": 0,
+      "2,11": 0,
+      "2,12": 0,
+      "2,13": 0,
+      "2,14": 0,
+      "2,15": 0,
+      "2,16": 0,
+      "2,17": 0,
+      "2,18": 0,
+      "2,19": 0,
+      "2,20": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "3,1,22,49",
+    "2,1,1,4",
+    "2,5,1,4",
+    "2,33,1,4",
+    "2,37,1,4",
+    "2,9,1,4",
+    "2,13,1,4",
+    "2,17,1,4",
+    "2,21,1,4",
+    "2,25,1,4",
+    "1,1,1,4",
+    "1,5,1,4",
+    "1,9,1,4",
+    "1,13,1,4",
+    "1,17,1,4",
+    "1,21,1,4",
+    "1,25,1,4",
+    "1,33,1,4",
+    "1,37,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}///v/H7bAUvWbPrVIt9IdMNgXV5pv/G11L9fPPCc2hLu3sJ5r/V1Q8uCx07rhY1eGP/V5HcNci2eJflhkUo7LGmeCj2p057W1UYlTEt4JmzStRbt79/V6kYrShktmAWIv09j5zDeVCnyNnXU4EusDl0uIc9+cjaYboUEkRW6CLtB4XMw/PbnKNM9xVY3XzEeOYuVRY3VQrd7PDPc11BEPsK1NrM1NjvmqeMIFk2ghyn4kGJaDTvPXVH9A0kWC77w7c4XIMP/ij8OYMLx4p8JFz5mcCPa72MBYtiMBnXePYSNE7z6WkBBWzy4fseVGLFR6ePdrnO1V2aR0RpcmpEAipxwRNoVAkcwz56eEhVVPEMUP041pVk50TT0UzbNsEFusaNxAMDiMTG5xog7eR4MviEu+m+5ib6slaiv5KAeReycHRx6MOVcWUJOYH97cSupdlYtR+y5CceYE8qtJx9f1Ms5jXQqjNZ8BZHA+qFGK/mZayjNN+dAgo0crPZL5VmOXbXxUbKtriV26HPquY0LpDm87ebKwDd7fXRuLAo/UiDpqwiXsIBfhTEC7UDpdh4Tf0A5ADGVGTKEs3QFQI2VwyVsYwOgtDq9FQAuSQ9fay5uaJSqN48g7AjwnhfmZW2PUV1nnF3JI4erPejbyQGZIZVSHwqM/Iho+MT3jh9rR0JO6JHaoNs+kR0L+bKSEdKFKSt0nXwOho7xoAqJlxmxmZvNYcMpIBVVnDqR1jJDSvZ6GXJZTHyg8287A6YrNMeD8TdfIG7sU6w2IPfn0Gd4NC0JHQ0hRbQwMo5JZiKC3G82qE2Om65zJ9SP/st0LkrEgXP9IMXGDzInORnw0He9WQtHcnqdsDPqldCMySLBruWQTW8VH5qUrAoGhT7gzHntezJogspZ/ZSxxxFyzaeeLFTQ==|920

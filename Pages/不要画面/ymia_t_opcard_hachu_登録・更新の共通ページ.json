@@ -1,0 +1,442 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "23": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "25": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "27": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "29": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "31": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "Count": 45
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "3,6": "RecordId:",
+    "5,6": "部品コード:",
+    "7,6": "部品名称:",
+    "9,6": "規格寸法:",
+    "11,6": "図面番号:",
+    "13,6": "ロケーション:",
+    "15,6": "発注点:",
+    "17,6": "LT:",
+    "19,6": "発注数:",
+    "21,6": "一箱収容数:",
+    "23,6": "単位:",
+    "25,6": "発注日:",
+    "27,6": "今回発注数:",
+    "29,6": "ステータス:",
+    "31,16": "キャンセル"
+  },
+  "AttachInfos": {
+    "3,14": {
+      "BindingInfo": {
+        "TableName": "ymia_t_opcard_hachu",
+        "ColumnName": "RecordId",
+        "GUID": "46dfe14c-634a-484b-9b30-bf7f91800441"
+      }
+    },
+    "5,14": {
+      "BindingInfo": {
+        "TableName": "ymia_t_opcard_hachu",
+        "ColumnName": "部品コード",
+        "GUID": "c49a185c-6b68-468b-a7b3-ba9552212393"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "7,14": {
+      "BindingInfo": {
+        "TableName": "ymia_t_opcard_hachu",
+        "ColumnName": "部品名称",
+        "GUID": "b1c22d4e-1071-4ae8-b7d1-04988f7bee92"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "9,14": {
+      "BindingInfo": {
+        "TableName": "ymia_t_opcard_hachu",
+        "ColumnName": "規格寸法",
+        "GUID": "0d106a86-d9ad-4e48-80d9-9197b454d5ef"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "11,14": {
+      "BindingInfo": {
+        "TableName": "ymia_t_opcard_hachu",
+        "ColumnName": "図面番号",
+        "GUID": "51f0bedf-440f-499e-a9d6-b3423a8eadd7"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "13,14": {
+      "BindingInfo": {
+        "TableName": "ymia_t_opcard_hachu",
+        "ColumnName": "ロケーション",
+        "GUID": "98c28622-81d5-48a5-a552-9a418b16b7f5"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "15,14": {
+      "BindingInfo": {
+        "TableName": "ymia_t_opcard_hachu",
+        "ColumnName": "発注点",
+        "GUID": "2185bbe1-94fa-4e6e-86d7-9ca6e83f02fb"
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "17,14": {
+      "BindingInfo": {
+        "TableName": "ymia_t_opcard_hachu",
+        "ColumnName": "LT",
+        "GUID": "b4995132-592e-41c6-8a90-fd37c6a1ac6d"
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "19,14": {
+      "BindingInfo": {
+        "TableName": "ymia_t_opcard_hachu",
+        "ColumnName": "発注数",
+        "GUID": "6b6378c2-ea6b-45f0-ae5e-6cf7c4a7e95c"
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "21,14": {
+      "BindingInfo": {
+        "TableName": "ymia_t_opcard_hachu",
+        "ColumnName": "一箱収容数",
+        "GUID": "caa81e21-8e89-4d67-bf32-138d3f91bed8"
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "23,14": {
+      "BindingInfo": {
+        "TableName": "ymia_t_opcard_hachu",
+        "ColumnName": "単位",
+        "GUID": "f5e432f8-1b76-4ca8-b2a3-be2cfb41e296"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "25,14": {
+      "BindingInfo": {
+        "TableName": "ymia_t_opcard_hachu",
+        "ColumnName": "発注日",
+        "GUID": "41879903-3fb8-4929-986c-6ad8361daf28"
+      },
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "27,14": {
+      "BindingInfo": {
+        "TableName": "ymia_t_opcard_hachu",
+        "ColumnName": "今回発注数",
+        "GUID": "c12b169c-0058-4608-aa1b-b0943097b400"
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "29,14": {
+      "BindingInfo": {
+        "TableName": "ymia_t_opcard_hachu",
+        "ColumnName": "ステータス",
+        "GUID": "6a46a2ee-f9a9-4b0e-b720-a9e5c2a5cfd6"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "31,10": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=ymia_t_opcard_hachu_登録・更新の共通ページ!K32"
+                      }
+                    ]
+                  },
+                  "value": "登録"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "ymia_t_opcard_hachu",
+                    "UpdateType": "add"
+                  }
+                ],
+                "ID": "371a6757-e831-425f-b8f8-1f27c9237441"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=ymia_t_opcard_hachu_登録・更新の共通ページ!K32"
+                      }
+                    ]
+                  },
+                  "value": "更新"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "ymia_t_opcard_hachu"
+                  }
+                ],
+                "ID": "6d27de31-ad90-453c-842e-c5ba76e882bf"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "NavigateType": "back"
+          }
+        ],
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "31,16": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "NavigateType": "back"
+          }
+        ],
+        "Text": "キャンセル",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontWeight": 0
+      },
+      {
+        "Formatter": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "@",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "3,6": 0,
+      "5,6": 0,
+      "5,14": 1,
+      "7,6": 0,
+      "7,14": 1,
+      "9,6": 0,
+      "9,14": 1,
+      "11,6": 0,
+      "11,14": 1,
+      "13,6": 0,
+      "13,14": 1,
+      "15,6": 0,
+      "17,6": 0,
+      "19,6": 0,
+      "21,6": 0,
+      "23,6": 0,
+      "23,14": 1,
+      "25,6": 0,
+      "27,6": 0,
+      "29,6": 0,
+      "29,14": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "3,14,1,6",
+    "5,14,1,6",
+    "7,14,1,6",
+    "9,14,1,6",
+    "11,14,1,6",
+    "13,14,1,6",
+    "15,14,1,6",
+    "17,14,1,6",
+    "19,14,1,6",
+    "21,14,1,6",
+    "23,14,1,6",
+    "25,14,1,6",
+    "27,14,1,6",
+    "29,14,1,6",
+    "31,10,1,4",
+    "31,16,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "ShouldCheckDirty": true,
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//GfgRFW3MnEBzrE3C7AeTMZK+0MnQNufzB1LdhktzrSlqc27+TXFhWkmhwTgwwCCgtEgyv7WmElp3/d0a05AadJLVHuuIUE0sOi+jCb/qjuD8G/smG8OhtxJbgUDI7ZuaaK64noyOgn87Rbe1MWFilQjOLLv5zD8pAs/bf5vC1ZQq05ztcbTyDfU+V4piwywcI7CHvgRjRwZtHbfaitLcMvvBGqoDbI2PI5l7kAfCX0tFhCVV1zSDDDUzomPPu+DTmXbWGGkCDopjOjtMSwTOty2VQNoElrMEoCuspD5GM0mrdPzg81JjRFfecX1A88AISp3jb9nj7QdeGw9LCFEwCW+d1IKsWDg06d2wvzddWvcvVx7ABvGwJoaRMp/2ZWeJr6XEOBzcClRpbjT2bayj2KEfbQIKA9FvRCMsaRNjmCBf0bUjxpJ6nGpemQdTv6YNMJAkP4djZ3/jqujOzITLiTOR6hlPB2Ev83BMvHAsWnSZ2GHJZFeVM4b2YGPancpjJuJLabj3gFYWUnueOZYFD66R3Bpsbc05KnONnZCrlJwxy7hShLOEdRmj9OV7L7bqxV1HbIsPF+89QwRoNUMcxThfV3lffnYNhgG8DgGLTdUl3klKSiT2I61COpIMgE81wvPZFiDsS1+ZkUUNinzRKi3uR6cFi7m9afWbRF+l4Y4DFwblKg2ehaM1I1C35CZue6TuxkuzVDgAkAyH0lLVYFWWzjEBV6+7FVact7Cuj9S88gcg8NXYJ9V72ATYQ7mwjIhvEj+We64rJxq1MfHk7mLAm7EYcCr5nXD51WQsDea42Vti5DvLgA/N1Wssrtc/87eMLsHZ4bwIEyG1uakKT+g3JilkRZdV57a6jw/J67oTOnBsY7WZ4j9ZcTRiqj/o+2oWj2s6nXkrsxNSx+eafA==|920

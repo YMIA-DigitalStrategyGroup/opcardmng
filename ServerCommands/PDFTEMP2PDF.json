@@ -1,0 +1,41 @@
+{
+  "Name": "PDFTEMP2PDF",
+  "Enabled": false,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.PostRequestTriggerSaveData, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_LoginUser"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "SqlServerRemacsWeb",
+      "Params": {},
+      "SqlStatement": "TRUNCATE TABLE ymia_m_opcard_pdf",
+      "ID": "dee596300c8d49e7aad611e58c4bc715"
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "SqlServerRemacsWeb",
+      "Params": {},
+      "SqlStatement": "insert into ymia_m_opcard_pdf select * from ymia_m_opcard_pdf_temp order by ロケーション",
+      "ID": "0f0797c719d249fb8b8e5f4e97e196b8"
+    }
+  ]
+}

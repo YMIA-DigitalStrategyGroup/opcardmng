@@ -1,0 +1,395 @@
+{
+  "Rows": {
+    "Count": 39
+  },
+  "Cols": {
+    "Count": 42
+  },
+  "Values": {
+    "3,9": "取引先CD(AS400)",
+    "3,16": "取引先名称",
+    "3,30": "検索",
+    "3,35": "クリア",
+    "6,9": "取引先CD(AS400)",
+    "36,1": "更新"
+  },
+  "AttachInfos": {
+    "3,30": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "ymia_m_opcard_hachutanto",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "ymia_m_opcard_hachutanto",
+                    "ColumnName": "取引先CD_AS400",
+                    "GUID": "ddb1f84f-370a-42b8-8aa0-2f97a9e8d48c"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=仕入先担当者マスタメンテ!J5"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "ymia_m_opcard_hachutanto",
+                    "ColumnName": "取引先名称",
+                    "GUID": "28914a22-1221-4c07-9c96-7413dba69b75"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=仕入先担当者マスタメンテ!Q5"
+                  }
+                }
+              ],
+              "RelationType": 1
+            },
+            "ID": "ee7e28f293d74f3ea4b30efad74c52d2"
+          }
+        ],
+        "Text": "検索",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "3,35": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "ymia_m_opcard_hachutanto",
+            "ID": "1a61ae9c494d4e2dbd08f4f564ec52db"
+          }
+        ],
+        "Text": "クリア",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "4,9": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "4,16": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "6,1": {
+      "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "ymia_m_opcard_hachutanto",
+        "RowIndex": 6,
+        "ColumnIndex": 1,
+        "RowCount": 29,
+        "ColumnCount": 39,
+        "TopCondition": {
+          "$type": "ForguncyDataAccess.TopCESqlCondition, ForguncyDataAccess",
+          "TopCount": 100
+        },
+        "TableLoadOnDemandInfo": {
+          "IsEnabled": true
+        },
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "ColumnOperation": 2,
+        "CommitType": 1
+      }
+    },
+    "7,2": {
+      "BindingInfo": {
+        "TableName": "ymia_m_opcard_hachutanto",
+        "ColumnName": "取引先CD",
+        "GUID": "7b08f3f1-98e1-4cc6-9a39-b2057b132013"
+      }
+    },
+    "7,9": {
+      "BindingInfo": {
+        "TableName": "ymia_m_opcard_hachutanto",
+        "ColumnName": "取引先CD_AS400",
+        "GUID": "0455f51a-3494-44a4-9ae0-f4a391e32df1"
+      }
+    },
+    "7,16": {
+      "BindingInfo": {
+        "TableName": "ymia_m_opcard_hachutanto",
+        "ColumnName": "取引先名称",
+        "GUID": "c5363830-5a51-4f49-8eda-e9c97c053485"
+      }
+    },
+    "7,34": {
+      "BindingInfo": {
+        "TableName": "ymia_m_opcard_hachutanto",
+        "ColumnName": "担当者CD",
+        "GUID": "9fa89d7b-7956-4dbc-8b10-3158489cd378"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "IsBounding": true,
+        "DataSource": "発注残管理_購買担当管理",
+        "ValueColumnBindingInfo": {
+          "TableName": "発注残管理_購買担当管理",
+          "ColumnName": "購担CD",
+          "GUID": "91710b75-4c68-496d-9328-2b01b9c0dcd3"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "発注残管理_購買担当管理",
+          "ColumnName": "購担名",
+          "GUID": "92b337d4-e8d4-496e-9245-037a7ebecd4c"
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "発注残管理_購買担当管理",
+                "ColumnName": "購担CD",
+                "GUID": "2fd0fde8-90a7-4ec7-91c2-23a0ff08ab85"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "DropDownSubItems": [
+          {
+            "GUID": "170d10ae1a3f4ac48222b9ec2ce03da6",
+            "BindingInfo": {
+              "TableName": "発注残管理_購買担当管理",
+              "ColumnName": "購担CD",
+              "GUID": "0def8d9e-9b94-459c-bea4-bbf718927c15"
+            },
+            "ColumnName": "購担CD"
+          },
+          {
+            "GUID": "4905a009aa70485ca06121cb95e7d775",
+            "BindingInfo": {
+              "TableName": "発注残管理_購買担当管理",
+              "ColumnName": "購担名",
+              "GUID": "bf593be5-4135-4c27-89f1-2810f071becd"
+            },
+            "ColumnName": "購担名"
+          }
+        ]
+      }
+    },
+    "36,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": "仕入先担当者のマスタを更新しますか？",
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+                    "ListviewName": "リストビュー1",
+                    "UpdateType": 3
+                  },
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "仕入先担当者のマスタを更新しました！！"
+                  }
+                ],
+                "ID": "bee99008-d2cf-41f0-b546-ea9da81c0014"
+              }
+            ]
+          }
+        ],
+        "Text": "更新",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 2
+      },
+      {
+        "FontFamily": 2,
+        "Formatter": 3,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 2,
+        "Formatter": 3,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Accent 1 80",
+        "black",
+        "Body",
+        "@"
+      ],
+      "Borders": [
+        {
+          "Color": 1
+        }
+      ]
+    },
+    "CellStyles": {
+      "3,9": 0,
+      "3,10": 1,
+      "3,11": 1,
+      "3,12": 1,
+      "3,13": 1,
+      "3,14": 1,
+      "3,15": 2,
+      "3,16": 0,
+      "3,17": 1,
+      "3,18": 1,
+      "3,19": 1,
+      "3,20": 1,
+      "3,21": 1,
+      "3,22": 1,
+      "3,23": 1,
+      "3,24": 1,
+      "3,25": 1,
+      "3,26": 1,
+      "3,27": 1,
+      "3,28": 1,
+      "3,30": 3,
+      "3,31": 3,
+      "3,32": 3,
+      "3,33": 3,
+      "3,35": 3,
+      "3,36": 3,
+      "3,37": 3,
+      "3,38": 3,
+      "4,9": 4,
+      "4,10": 5,
+      "4,11": 5,
+      "4,12": 5,
+      "4,13": 5,
+      "4,14": 5,
+      "4,15": 5,
+      "4,16": 6,
+      "4,17": 1,
+      "4,18": 1,
+      "4,19": 1,
+      "4,20": 1,
+      "4,21": 1,
+      "4,22": 1,
+      "4,23": 1,
+      "4,24": 1,
+      "4,25": 1,
+      "4,26": 1,
+      "4,27": 1,
+      "4,28": 1,
+      "4,30": 3,
+      "4,31": 3,
+      "4,32": 3,
+      "4,33": 3,
+      "4,35": 3,
+      "4,36": 3,
+      "4,37": 3,
+      "4,38": 3,
+      "7,9": 3
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "7,2,1,7",
+    "7,9,1,7",
+    "7,16,1,18",
+    "3,9,1,7",
+    "36,1,2,6",
+    "8,1,27,39",
+    "7,34,1,5",
+    "4,9,1,7",
+    "4,16,1,13",
+    "3,16,1,13",
+    "3,30,2,4",
+    "3,35,2,4",
+    "6,2,1,7",
+    "6,9,1,7",
+    "6,16,1,18",
+    "6,34,1,5"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "発注管理画面",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//teigYyPuUzrBK4LREoE0lXYut+UUvCrsEc0E8X3+LS2RYIBTWyn0Dtd5dCFGfvpS+SIKliw2FA0X84V3MwQw4tCAHWWFgpFwCKR0OOyNxOgjGurQM800P3f8ja44pfwF3O0lDetuEtl6/p/DkdKBzGHSGqPPcJWRZPyLxJ9bsyfTHesnejRJMhL+hZeMBoA1Aexbj1r2kYptP6+NhzRIUz0/pGlnLqJMkWRbwQMOGF2+ZJVA+DDQUhw8u0rhVMQ+5w3vbdESwaRgZcHikwDK2a+FbiCQwJkBmkvyBpPOQYRAUKom8DlzILJxGpTXu3eCHbZxU3tnDJdwaXOnv1NOdP8RKOPyBedfeLU9hx04ywOuEX4B2ExkSiqIeX8abX/AvjgoAjS9N7fsfxoTYisd/eagRZ0XSSsD/rvD1IfC2u9MmAJFXXzLuC0JzowlFrjQsa345z/zah+6LdyE0WE/7tS/jvhaamCl6AM1Gm9jmsF+1pEacgywpdj4c4onoa+oHiIlTtKBDQ7pXBnAm/U+nJJex1peP4A1fCwNQ+fArC1RrhTjUqLegs3wMA/j99dCS1bzC6g3F+y3s5ZSveSp+1I6NvvRM5sPpsrg/W7mk6traKnbTYu+fOnqHFnQLcXMFWSLHk7VOV/oxTwCdNAT9LzAE5xlGhflcVQavcL84hK4GzuWzMMZwxebLytNV/GG7AbGaxqOnEFA7oTzHcYo+kxPZUQXyGaT0FhAzLeZPCg3WJZJCqV41rifxAFfNHeMr2NUkXLTUfeGSro+tXPpVxU29tKpgrP2Sz2MVXcuZ2ehJj/GFvaTRx2QzmOJZaVLlO1xKzV5VBq3vzdjPYj9YDuSjyoC94CPr+f2iavTGzkiKSKp6r1HdkoM3NKOVXDUtr3jUAGRET9tDwb8JOcpzg==|920

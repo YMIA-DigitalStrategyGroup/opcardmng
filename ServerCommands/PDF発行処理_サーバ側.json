@@ -1,0 +1,234 @@
+{
+  "Name": "PDF発行処理_サーバ側",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.PostRequestTriggerSaveData, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_LoginUser"
+              ]
+            }
+          ]
+        }
+      },
+      "Parameters": [
+        {
+          "Name": "注文番号_結合",
+          "DataValidationInfo": {},
+          "TestData": "60152600"
+        },
+        {
+          "Name": "注文番号_1",
+          "DataValidationInfo": {},
+          "TestData": "6"
+        },
+        {
+          "Name": "注文番号_2",
+          "DataValidationInfo": {},
+          "TestData": "01526"
+        },
+        {
+          "Name": "注文番号_3",
+          "DataValidationInfo": {},
+          "TestData": "0"
+        },
+        {
+          "Name": "注文番号_4",
+          "DataValidationInfo": {},
+          "TestData": "0"
+        },
+        {
+          "Name": "取引先CD",
+          "DataValidationInfo": {},
+          "TestData": "G80020"
+        },
+        {
+          "Name": "TOアドレス",
+          "DataValidationInfo": {}
+        },
+        {
+          "Name": "FROMアドレス",
+          "DataValidationInfo": {}
+        },
+        {
+          "Name": "本文",
+          "DataValidationInfo": {}
+        },
+        {
+          "Name": "CCファイル",
+          "DataValidationInfo": {}
+        },
+        {
+          "Name": "PDFファイル名",
+          "DataValidationInfo": {}
+        },
+        {
+          "Name": "コメント",
+          "DataValidationInfo": {}
+        },
+        {
+          "Name": "取引先名",
+          "DataValidationInfo": {}
+        },
+        {
+          "Name": "発注日",
+          "DataValidationInfo": {}
+        }
+      ],
+      "InvokeTriggerTestData": {
+        "UserName": "Administrator"
+      }
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ExportPageToPdfCommand, ServerDesignerCommon",
+      "TargetPageName": "発注書画面_複数",
+      "ServerExportFileName": {
+        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+        "SerializeProperty": "=PDFファイル名"
+      },
+      "ExportCellValueInfos": [
+        {
+          "CellName": "注文番号_1",
+          "CellValue": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=注文番号_結合"
+          }
+        },
+        {
+          "CellName": "注文番号_2",
+          "CellValue": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=注文番号_2"
+          }
+        },
+        {
+          "CellName": "注文番号_3",
+          "CellValue": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=注文番号_3"
+          }
+        },
+        {
+          "CellName": "注文番号_4",
+          "CellValue": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=注文番号_4"
+          }
+        },
+        {
+          "CellName": "取引先CD",
+          "CellValue": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=取引先CD"
+          }
+        },
+        {
+          "CellName": "注文番号連結",
+          "CellValue": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=注文番号_結合"
+          }
+        },
+        {
+          "CellName": "コメント",
+          "CellValue": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=コメント"
+          }
+        },
+        {
+          "CellName": "取引先名",
+          "CellValue": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=取引先名"
+          }
+        },
+        {
+          "CellName": "発注日",
+          "CellValue": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=発注日"
+          }
+        }
+      ],
+      "ExportListViewCurrentRowInfos": [
+        {
+          "BindingTable": "thatchum"
+        },
+        {
+          "BindingTable": "ymia_m_opcard_pdfhdr",
+          "CurrentRowCondition": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "ymia_m_opcard_pdfhdr",
+              "ColumnName": "発注番号",
+              "GUID": "5b515171-5de8-4162-bcb5-2150b44dc774"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=注文番号_結合"
+            }
+          }
+        },
+        {
+          "BindingTable": "mtorihiki",
+          "CurrentRowCondition": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "mtorihiki",
+              "ColumnName": "TORIHIKISAKI_CODE",
+              "GUID": "1234077d-0f72-41db-a411-69b002519863"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
+      "From": {
+        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+        "SerializeProperty": "=FROMアドレス"
+      },
+      "EnhancedRecipient": {
+        "CommonValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=TOアドレス"
+        }
+      },
+      "Subject": "【ご連絡】 発注書送付の件",
+      "Content": {
+        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+        "SerializeProperty": "=本文"
+      },
+      "EnhancedCC": {
+        "CommonValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=CCファイル"
+        }
+      },
+      "Attachments": {
+        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+        "SerializeProperty": "=PDFファイル名&\".PDF\""
+      },
+      "ID": "1ea21033b2db46c59c99eb1dccccd1fb"
+    },
+    {
+      "$type": "OperateFilesCommand.DeleteFileCommand, OperateFilesCommand",
+      "FilePath": {
+        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+        "SerializeProperty": "=PDFファイル名&\".PDF\""
+      }
+    }
+  ]
+}

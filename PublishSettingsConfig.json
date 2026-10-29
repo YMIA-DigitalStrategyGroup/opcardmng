@@ -1,0 +1,16 @@
+[
+  {
+    "Name": "Remacs本番環境",
+    "ApplicationUrl": "http://YMIADIGITALSV01/opcardmngRemacs",
+    "PublishSettings": {
+      "IsPrivateServer": true,
+      "ServerName": "YMIADIGITALSV01",
+      "UserName": "AA121806",
+      "SitePort": 80,
+      "AppName": "opcardmngRemacs",
+      "AppStartPage": "",
+      "TakeServeronline": true,
+      "PublishRolesToServer": true
+    }
+  }
+]

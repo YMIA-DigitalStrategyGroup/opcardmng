@@ -1,0 +1,78 @@
+{
+  "Name": "未確定分メール送信_サーバーサイドコマンド",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.PostRequestTriggerSaveData, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_LoginUser"
+              ]
+            }
+          ]
+        }
+      },
+      "InvokeTriggerTestData": {
+        "UserName": "Administrator"
+      }
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "MailBody",
+      "ID": "16839527c76e419cb0a9332d42648c16"
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "SqlServerRemacsWeb",
+      "Params": {},
+      "SqlStatement": "select (部品コード + char(9) + 部品名称 + char(9) + STR(発注数) + char(9) + FORMAT(希望納期, 'yyyy/MM/dd') + char(9) + format(発注日, 'yyyy/MM/dd') + char(9) + 仕入先コード + char(9) + 仕入先名称) as メール情報 from ymia_t_opcard_hachu where ステータス='未処理'",
+      "ReturnsName": "QueryResults",
+      "ID": "93382b120d42489881188b359c005bf3"
+    },
+    {
+      "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+      "LoopInfo": {
+        "$type": "Forguncy.Model.CountLoopInfo, ServerDesignerCommon",
+        "LoopCount": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=QueryResults"
+        },
+        "LoopItemParamName": "Item"
+      },
+      "CommandList": [
+        {
+          "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+          "ParameterName": "MailBody",
+          "ParameterValue": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=MailBody&Item.メール情報&CHAR(10)"
+          },
+          "ID": "7b18e77e85d84b81a54e68c91a29609c"
+        }
+      ]
+    },
+    {
+      "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
+      "From": "ymia_system@yanmar.com",
+      "EnhancedRecipient": {
+        "CommonValue": "satoru_kishiyama@yanmar.com"
+      },
+      "Subject": "OPカード発注情報",
+      "Content": {
+        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+        "SerializeProperty": "=MailBody"
+      },
+      "ID": "810bdfaf474d4b7e991f487044af4135"
+    }
+  ]
+}

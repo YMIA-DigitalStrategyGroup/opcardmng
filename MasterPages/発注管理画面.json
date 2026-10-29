@@ -1,0 +1,361 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "Count": 48
+  },
+  "Cols": {
+    "Count": 83
+  },
+  "AttachInfos": {
+    "1,1": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "ImagePath": "fgc_logo_light.svg"
+      }
+    },
+    "2,73": {
+      "CellType": {
+        "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
+        "CellCustomValue": "%CurrentUser%",
+        "ShowCircleUserPicture": true,
+        "NavigateSettingWhenLogout": {
+          "NavigateWhenLogoutMode": 1
+        }
+      }
+    },
+    "7,0": {
+      "CellType": {
+        "$type": "Forguncy.CustomMenu.ForguncyMenuCellType, Forguncy.CustomMenu",
+        "TemplateKey": "_RS_Dark_ThemeStyle2",
+        "Items": [
+          {
+            "Value": "注文一覧画面",
+            "Text": "注文一覧画面",
+            "IconPath": "Navigation/165_home_3.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "一覧ページ"
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Value": "注文残画面",
+            "Text": "注文残画面",
+            "IconPath": "ExpandCollapse/489_expand_10.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "生産管理_注文残画面"
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Value": "注文書発行",
+            "Text": "注文書発行",
+            "IconPath": "File/358_pdf_file_1.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "発注書一覧画面"
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Value": "マスタメンテ画面",
+            "Text": "マスタメンテ画面",
+            "IconPath": "Navigation/183_table_2.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "発注時コメントマスタメンテ",
+                "Disabled": true
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ],
+            "SubItems": [
+              {
+                "Value": "発注時コメントマスタ設定",
+                "Text": "発注時コメントマスタ設定",
+                "IconPath": "Navigation/188_message_1.svg",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "発注時コメントマスタメンテ"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              },
+              {
+                "Value": "カレンダマスタ設定",
+                "Text": "カレンダマスタ設定",
+                "IconPath": "Application/136_calendar_1.svg",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "カレンダマスタメンテ"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              },
+              {
+                "Value": "仕入先担当者マスタ",
+                "Text": "仕入先担当者マスタ",
+                "IconPath": "Application/015_add_user_1.svg",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "仕入先担当者マスタメンテ"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              },
+              {
+                "Value": "定期メール送信先マスタ",
+                "Text": "定期メール送信先マスタ",
+                "IconPath": "Application/122_send_2.svg",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "定期メール送信先マスタメンテ"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              }
+            ]
+          },
+          {
+            "Value": "OPカード印刷",
+            "Text": "OPカード印刷",
+            "IconPath": "Application/073_print_4.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ],
+            "SubItems": [
+              {
+                "Value": "表面印刷",
+                "Text": "表面印刷",
+                "IconPath": "Application/072_print_3.svg",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "OPカード印刷"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              },
+              {
+                "Value": "ログイン用",
+                "Text": "ログイン用",
+                "IconPath": "Application/130_list_2.svg",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "ログインバーコード印刷"
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              },
+              {
+                "Value": "裏面印刷（工事中）",
+                "Text": "裏面印刷（工事中）",
+                "IconPath": "Mobile/456_delete_8.svg",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              }
+            ]
+          }
+        ],
+        "Orientation": 0,
+        "MenuLevelsStyle": [
+          {
+            "FontSize": 17.3333333333333,
+            "Height": 45.0,
+            "Width": 200.0,
+            "IconHeight": 24.0,
+            "IconWidth": 24.0
+          },
+          {
+            "FontSize": 16.0,
+            "Height": 32.0,
+            "Width": 200.0,
+            "IconHeight": 24.0,
+            "IconWidth": 24.0
+          }
+        ]
+      }
+    },
+    "7,72": {
+      "CellType": {
+        "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
+        "CellCustomValue": "%CurrentUser%",
+        "ShowCircleUserPicture": true,
+        "NavigateSettingWhenLogout": {
+          "NavigateWhenLogoutMode": 1
+        }
+      }
+    },
+    "9,0": {
+      "IsPlaceHolderCell": true
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "HorizontalAlignment": 0,
+        "VerticalAlignment": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Left",
+        "Top",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "7,72": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "1,1,5,10",
+    "9,0,39,83",
+    "2,73,3,10",
+    "7,0,2,72",
+    "7,72,2,11"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.MasterPage, ServerDesignerCommon",
+    "PageLoadedCommandList": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "BackgroundPictures": [
+    {
+      "FitToBrowserWidth": true,
+      "FitToBrowserHeight": true,
+      "Repeat": true,
+      "Name": "515397b3-ef9b-4f31-a45b-aa3c3ce18665",
+      "DisplayName": "背景画像1",
+      "ForguncyPictureName": "PCMasterBackground",
+      "ForguncyPictureSourceType": 2,
+      "Stretch": 2,
+      "Size": "200,210"
+    },
+    {
+      "Name": "d7fb6181-e71a-4167-8b3d-6a2865f62b2a",
+      "DisplayName": "背景画像2",
+      "ForguncyPictureName": "PCMasterBanner",
+      "ForguncyPictureSourceType": 2,
+      "Stretch": 3,
+      "Size": "1660,100"
+    }
+  ]
+}//55eWvzxOjMi/sB3xCf8/9e+rJEQwvt71H2yLAYKXQAsgw06tipP/pCmWl6f1XVb1YfLv1XSQlMwRn8c+28acWFb6IXGMXqcbVbT5F6/oPUef5A2brThnNJbOomQVkI8pGhQpotQ+Hv7wPmWSpy43PvLNIaAsTYUxaVEleasuLIB3QSAZ9AAyywVp2pq81OMFO3haFifxjwMH+ryKxpENA2RwAMA15/MEi5ccAdD0SgNCXYJJc5efwpYiq3KInLCnceHmaX/+o1ObGWpsejfLjfaGPJmVLYhj8d11EhGOsDrwMG6Wni1Zr13/wnOvCTYbBN6dtZKKPkBpBvsodwPH5j7YRkysALdKaI36jDCh0rdDy5tg2JGmZ6xdnUOKvzKRQXXVWW4gP0v5WwjgPXuprfPBkOxFI2cYnuJBl4B5/RLI033L8TuQ5zWPjgcB4G/GU8Ziu9PAL3LlsmJJD8pn/D16netqkWfT9/4G+nyLoccpA8HhdvHYUxxKdTbhlrvPZMgUGQyWNp/2ilx0/tX1DVD9mXQZKG7yyVFKf+L49/1zygAPnNe1FIWSKBspOJFPVvCZ09ebk3zKZvgCPcRCiMI8/Cg/MSZZsINZI9YV0UXVGaDFdnL53XNLAxzb/YcRAYxDr1c6rhN4FM8ehxb1nvTSIrflMHZDpX8LP7mmrfGwIdt8jmluZkPyfR3R9K97mnL6cFgAhvJ4pEyDKoQciAOJPUwEwJJA99aIwhrH+WdDAqrc/NCaTuF4zrjRYGTrqoH3Xs7ThhICd3nPruVBmzmiktkRVws8sFtpW7R/3CNykxOmRYoRMW+ka4Y/1oGBkAEn+aQEDNwcf4Mu/r059WqTwBYCwJgqL0HgfnX+JCDfXyS4JgeFu5iFLaBlc4Iu5opY49z2Xy/NNHAHQczGlA==|920

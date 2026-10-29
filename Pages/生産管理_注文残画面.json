@@ -1,0 +1,637 @@
+{
+  "Rows": {
+    "Count": 46
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      67,
+      68,
+      69
+    ],
+    "Count": 71
+  },
+  "Values": {
+    "1,2": "部品コード",
+    "1,9": "伝票番号",
+    "1,15": "仕入先コード",
+    "1,24": "検索",
+    "1,31": "クリア",
+    "4,2": "伝票番号",
+    "4,7": "部品コード",
+    "4,13": "部品名称",
+    "4,20": "費目",
+    "4,29": "発注単価",
+    "4,32": "発注数量",
+    "4,36": "仕入先CD",
+    "4,40": "仕入先名",
+    "4,53": "製番",
+    "4,59": "注文日",
+    "4,64": "納期"
+  },
+  "AttachInfos": {
+    "1,24": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "thatchum",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "thatchum",
+                    "ColumnName": "DENPYO_NBR",
+                    "GUID": "3c974482-20ac-406f-80d3-fc3928cb99e1"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=生産管理_注文残画面!J3"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "thatchum",
+                    "ColumnName": "HINBAN",
+                    "GUID": "d22b8e58-8af0-4d2f-97fb-4dc57d4c89b1"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=生産管理_注文残画面!C3"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "thatchum",
+                    "ColumnName": "HATCHU_NBR",
+                    "GUID": "cf6662f4-cc8c-4d9c-af12-61ebdf6ba5ce",
+                    "RelationBinding": {
+                      "RelatedTable": "thatchu",
+                      "RelatedColumn": "HATCHU_NBR",
+                      "DisplayColumn": "TORIHIKISAKI_CODE"
+                    }
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=生産管理_注文残画面!P3"
+                  }
+                }
+              ]
+            },
+            "ID": "f89c26d5833d4116954872a044711441"
+          }
+        ],
+        "Text": "検索",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "1,31": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=生産管理_注文残画面!J3"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=生産管理_注文残画面!C3"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=生産管理_注文残画面!P3"
+                }
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "thatchum",
+            "ID": "5d6a704375c8469aaece6851f3f4d8c1"
+          }
+        ],
+        "Text": "クリア",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "2,2": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "2,9": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "2,15": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "4,1": {
+      "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "thatchum",
+        "RowIndex": 4,
+        "ColumnIndex": 1,
+        "RowCount": 38,
+        "ColumnCount": 69,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "thatchum",
+                "ColumnName": "HATCHU_NBR",
+                "GUID": "4aacd54c-599c-45ac-8ac9-f5912d03fd94",
+                "RelationBinding": {
+                  "RelatedTable": "thatchu",
+                  "RelatedColumn": "HATCHU_NBR",
+                  "DisplayColumn": "NOKI"
+                }
+              },
+              "Order": 1
+            }
+          ]
+        },
+        "TopCondition": {
+          "$type": "ForguncyDataAccess.TopCESqlCondition, ForguncyDataAccess",
+          "TopCount": 50
+        },
+        "TableLoadOnDemandInfo": {
+          "IsEnabled": true,
+          "DemandedRowCount": 50
+        },
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2,
+        "DoNotLoadDataWhenLoadPage": true
+      }
+    },
+    "5,2": {
+      "NameUsedInJavaScript": "伝票番号",
+      "BindingInfo": {
+        "TableName": "thatchum",
+        "ColumnName": "DENPYO_NBR",
+        "GUID": "5f549a1c-eb1c-45fb-b563-5f6cd9befe5b"
+      }
+    },
+    "5,7": {
+      "BindingInfo": {
+        "TableName": "thatchum",
+        "ColumnName": "HINBAN",
+        "GUID": "4c38d4e0-30ef-424b-b72a-51be3ccea030"
+      }
+    },
+    "5,13": {
+      "BindingInfo": {
+        "TableName": "thatchum",
+        "ColumnName": "HINMEI",
+        "GUID": "88615820-8f32-4063-9875-7017d5e95d3c"
+      }
+    },
+    "5,29": {
+      "NameUsedInJavaScript": "発注単価",
+      "BindingInfo": {
+        "TableName": "thatchum",
+        "ColumnName": "TANKA",
+        "GUID": "8b9756a1-1529-499f-b5f1-3d27b16d4452"
+      }
+    },
+    "5,32": {
+      "NameUsedInJavaScript": "発注数量",
+      "BindingInfo": {
+        "TableName": "thatchum",
+        "ColumnName": "SURYO",
+        "GUID": "5b8c9d62-a28b-46d3-ada5-441c35c7907e"
+      }
+    },
+    "5,36": {
+      "BindingInfo": {
+        "TableName": "thatchum",
+        "ColumnName": "HATCHU_NBR",
+        "GUID": "cc9bfe30-5309-460f-bbad-d4b66da1b127",
+        "RelationBinding": {
+          "RelatedTable": "thatchu",
+          "RelatedColumn": "HATCHU_NBR",
+          "DisplayColumn": "TORIHIKISAKI_CODE"
+        }
+      }
+    },
+    "5,40": {
+      "BindingInfo": {
+        "TableName": "thatchum",
+        "ColumnName": "HATCHU_NBR",
+        "GUID": "50e7eb66-e17f-42f0-b559-b4dc9a0ccc1e",
+        "RelationBinding": {
+          "RelatedTable": "thatchu",
+          "RelatedColumn": "HATCHU_NBR",
+          "DisplayColumn": "TORIHIKISAKI_NAME"
+        }
+      }
+    },
+    "5,53": {
+      "NameUsedInJavaScript": "製番",
+      "BindingInfo": {
+        "TableName": "thatchum",
+        "ColumnName": "SEIBAN",
+        "GUID": "fc59d532-d047-4215-8aa4-178cbe887068"
+      }
+    },
+    "5,59": {
+      "NameUsedInJavaScript": "注文日",
+      "BindingInfo": {
+        "TableName": "thatchum",
+        "ColumnName": "HATCHU_NBR",
+        "GUID": "aacbf89a-42b4-45bb-bfc4-7df378126dda",
+        "RelationBinding": {
+          "RelatedTable": "thatchu",
+          "RelatedColumn": "HATCHU_NBR",
+          "DisplayColumn": "HATCHU_DATE"
+        }
+      }
+    },
+    "5,64": {
+      "NameUsedInJavaScript": "納期",
+      "BindingInfo": {
+        "TableName": "thatchum",
+        "ColumnName": "HATCHU_NBR",
+        "GUID": "ca0fd367-4f80-40d2-ad23-0237d3a4b307",
+        "RelationBinding": {
+          "RelatedTable": "thatchu",
+          "RelatedColumn": "HATCHU_NBR",
+          "DisplayColumn": "NOKI"
+        }
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0,
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": 0,
+        "FontFamily": 1,
+        "Formatter": 3,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 3
+      },
+      {
+        "FontFamily": 1
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 4,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Foreground": 5
+      },
+      {
+        "FontSize": 13.333333333333332
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 13.333333333333332,
+        "Formatter": 3
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 13.333333333333332
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 13.333333333333332,
+        "Formatter": 6,
+        "HorizontalAlignment": 7
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 13.333333333333332,
+        "Formatter": 6,
+        "HorizontalAlignment": 8
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 13.333333333333332,
+        "Formatter": 9,
+        "HorizontalAlignment": 7
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Accent 1 80",
+        "Body",
+        "black",
+        "[AUTO]General",
+        "@",
+        "#FFFF0000",
+        "#,##0.0_);[Red](#,##0.0)",
+        "Right",
+        "Left",
+        "yyyy/m/d"
+      ],
+      "Borders": [
+        {
+          "Color": 2
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,2": 0,
+      "1,3": 1,
+      "1,4": 1,
+      "1,5": 1,
+      "1,6": 1,
+      "1,7": 1,
+      "1,8": 1,
+      "1,9": 2,
+      "1,10": 1,
+      "1,11": 1,
+      "1,12": 1,
+      "1,13": 1,
+      "1,14": 1,
+      "1,15": 2,
+      "1,16": 1,
+      "1,17": 1,
+      "1,18": 1,
+      "1,19": 1,
+      "1,20": 1,
+      "1,31": 3,
+      "1,32": 4,
+      "1,33": 4,
+      "1,34": 4,
+      "1,35": 4,
+      "2,2": 5,
+      "2,3": 1,
+      "2,4": 1,
+      "2,5": 1,
+      "2,6": 1,
+      "2,7": 1,
+      "2,8": 1,
+      "2,9": 5,
+      "2,10": 1,
+      "2,11": 1,
+      "2,12": 1,
+      "2,13": 1,
+      "2,14": 1,
+      "2,15": 5,
+      "2,16": 1,
+      "2,17": 1,
+      "2,18": 1,
+      "2,19": 1,
+      "2,20": 1,
+      "2,31": 4,
+      "2,32": 4,
+      "2,33": 4,
+      "2,34": 4,
+      "2,35": 4,
+      "2,46": 6,
+      "2,47": 6,
+      "4,1": 7,
+      "4,2": 7,
+      "4,7": 8,
+      "4,8": 4,
+      "4,9": 4,
+      "4,10": 4,
+      "4,11": 4,
+      "4,12": 4,
+      "4,13": 9,
+      "4,14": 4,
+      "4,15": 4,
+      "4,16": 4,
+      "4,17": 4,
+      "4,18": 4,
+      "4,19": 4,
+      "4,20": 9,
+      "4,21": 4,
+      "4,22": 4,
+      "4,23": 4,
+      "4,24": 4,
+      "4,25": 4,
+      "4,26": 4,
+      "4,27": 4,
+      "4,28": 4,
+      "4,29": 9,
+      "4,30": 4,
+      "4,31": 4,
+      "4,32": 9,
+      "4,33": 4,
+      "4,34": 4,
+      "4,35": 4,
+      "4,36": 9,
+      "4,37": 4,
+      "4,38": 4,
+      "4,39": 4,
+      "4,40": 9,
+      "4,41": 4,
+      "4,42": 4,
+      "4,43": 4,
+      "4,44": 4,
+      "4,45": 4,
+      "4,46": 4,
+      "4,47": 4,
+      "4,48": 4,
+      "4,49": 4,
+      "4,50": 4,
+      "4,51": 4,
+      "4,52": 4,
+      "4,53": 9,
+      "4,54": 4,
+      "4,55": 4,
+      "4,56": 4,
+      "4,57": 4,
+      "4,58": 4,
+      "4,59": 8,
+      "4,60": 4,
+      "4,61": 4,
+      "4,62": 4,
+      "4,63": 4,
+      "4,64": 9,
+      "4,65": 4,
+      "4,66": 4,
+      "4,67": 4,
+      "4,68": 4,
+      "5,2": 9,
+      "5,7": 9,
+      "5,8": 4,
+      "5,9": 4,
+      "5,10": 4,
+      "5,11": 4,
+      "5,12": 4,
+      "5,13": 9,
+      "5,14": 4,
+      "5,15": 4,
+      "5,16": 4,
+      "5,17": 4,
+      "5,18": 4,
+      "5,19": 4,
+      "5,20": 9,
+      "5,21": 4,
+      "5,22": 4,
+      "5,23": 4,
+      "5,24": 4,
+      "5,25": 4,
+      "5,26": 4,
+      "5,27": 4,
+      "5,28": 4,
+      "5,29": 9,
+      "5,30": 4,
+      "5,31": 4,
+      "5,32": 10,
+      "5,33": 4,
+      "5,34": 4,
+      "5,35": 4,
+      "5,36": 10,
+      "5,37": 4,
+      "5,38": 4,
+      "5,39": 4,
+      "5,40": 11,
+      "5,41": 4,
+      "5,42": 4,
+      "5,43": 4,
+      "5,44": 4,
+      "5,45": 4,
+      "5,46": 4,
+      "5,47": 4,
+      "5,48": 4,
+      "5,49": 4,
+      "5,50": 4,
+      "5,51": 4,
+      "5,52": 4,
+      "5,53": 9,
+      "5,54": 4,
+      "5,55": 4,
+      "5,56": 4,
+      "5,57": 4,
+      "5,58": 4,
+      "5,59": 12,
+      "5,60": 4,
+      "5,61": 4,
+      "5,62": 4,
+      "5,63": 4,
+      "5,64": 12,
+      "5,65": 4,
+      "5,66": 4,
+      "5,67": 4,
+      "5,68": 4
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "6,1,36,69",
+    "1,15,1,6",
+    "2,15,1,6",
+    "1,24,2,5",
+    "1,31,2,5",
+    "1,9,1,6",
+    "2,9,1,6",
+    "1,2,1,7",
+    "2,2,1,7",
+    "5,7,1,6",
+    "4,7,1,6",
+    "5,13,1,7",
+    "4,13,1,7",
+    "5,20,1,9",
+    "4,20,1,9",
+    "5,29,1,3",
+    "4,29,1,3",
+    "5,32,1,4",
+    "4,32,1,4",
+    "5,36,1,4",
+    "4,36,1,4",
+    "5,40,1,13",
+    "4,40,1,13",
+    "5,53,1,6",
+    "4,53,1,6",
+    "5,59,1,5",
+    "4,59,1,5",
+    "5,64,1,5",
+    "4,64,1,5",
+    "5,2,1,5",
+    "4,2,1,5"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "発注管理画面",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//cc0tLm2Cmp822+6mxbcyXIjKQm3dyPtQvv7WCPYtJh7ewNiR2fCqZWnc4RmTYOUjO71bugc5c717TON2tvBmwDZ5mUmcCi8q0lN3jEOBaXI+2qsoixp9Z1TWV4jpwoR/RsLCGInyKU5T9Hb2rQn1Vx3j7rxFq3DS5AwimLcXH3FCMMa9NHZvzPviR6mmsVg31FGZtpe4Jbw9gnk4DHa3f2SRtbFRtkFk1JBNajJ85AKQsc5bFdhkeYWQACrBx7qf5hz6n/uZn4LXfpShXgF46NXeKfZpM5JLii3HgNag4E3wC/pyiE7nF99+xtPNTbnILn7q1YehMhVjzJX/H1hJyP3Xb+94by1STbpgxQ8Sp5cIMWUmIPaYReq//a1cVVBbqgjivI8O8hiC8CAUuX3LNZktmkMzyHIocWzxXUEffNEdOwCX8LRDF1aORgL+kLbneSBS5Ozw4B3whoAK+zLiEtb2HmGy2pNEtCK/tKGsTwVHf8K7unDqy18hqEzQ2EPCuk+2tBXc4fr/uxT7bw/QKgL5jH00eSkPgZIwOK32WgsK/76RyxI2byv9dz9Ri/pg9kWry+IPRo+vyYOg9yp2OTE1eKo2y7xgJRGLHyWCl8yeLYKqo+rM6mfWkMcZCQYRpF7XGuUQ4cNHh0rE669DCNW6Jql6I/iKXi4tAwZbW0CWu/yDgF77Z5gLLmtpesab9Fi6QUHPTFxdQHRBKE5sp0zQ0ca+i1Xj5SJmL+BFYFQW0IVmcnQIoVEwY4wP1Pch0iPiXsfj0saqZ2XLWo96LV846n8RZGUQRyr0YjEEnQnUn+fy4Hlul8APcurX3wMyIVrwGlzqnfs57Iz+nt3ucJK2yXo/RVVRXyRBvz2m0oMCmAOGpzO9uCUydBsP517Ohmnywotndm+7xBL8zOcQ6A==|920

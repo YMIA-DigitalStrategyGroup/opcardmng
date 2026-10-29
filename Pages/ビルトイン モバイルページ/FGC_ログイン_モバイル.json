@@ -1,0 +1,222 @@
+{
+  "Rows": {
+    "Count": 27
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "Count": 19
+  },
+  "Values": {
+    "7,0": "Forguncyアプリケーション",
+    "18,3": "ログイン",
+    "21,3": "パスワードを忘れた場合",
+    "23,1": "Administratorアカウント：Administrator\nパスワード：123456",
+    "25,1": "管理者から付与されたアカウントを使用してログインすることができます。"
+  },
+  "AttachInfos": {
+    "2,4": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_Normal1",
+        "ImagePath": "fgc_logo_dark.png"
+      }
+    },
+    "10,3": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "Icon": {
+          "Name": "Navigation/169_user_2.svg",
+          "BuiltIn": true,
+          "Color": "#FF7F7F7F"
+        },
+        "IconSize": 18.0,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "ユーザー名",
+        "ForguncyAttribute": "LogIn_Username"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "13,3": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "ShowPassword": true,
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "Icon": {
+          "Name": "Application/078_lock_1.svg",
+          "BuiltIn": true,
+          "Color": "#FF7F7F7F"
+        },
+        "IconSize": 18.0,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "パスワード",
+        "ForguncyAttribute": "LogIn_Password"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "16,3": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "Caption": "ログインしたままにする",
+        "Style": 1,
+        "ForguncyAttribute": "LogIn_RememberMe"
+      }
+    },
+    "18,3": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "ログイン",
+        "AutoExecute": true,
+        "TemplateKey": "_RS_Normal_Style2",
+        "ForguncyAttribute": "LogIn_Button"
+      }
+    },
+    "21,3": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "FGC_パスワードを忘れた場合_モバイル"
+          }
+        ],
+        "Text": "パスワードを忘れた場合"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 13.333333015441895,
+        "Foreground": 0
+      },
+      {
+        "FontSize": 21.33333396911621,
+        "Foreground": 1,
+        "Formatter": 2,
+        "HorizontalAlignment": 3,
+        "VerticalAlignment": 4
+      },
+      {
+        "FontSize": 13.333333015441895,
+        "Formatter": 5,
+        "Underline": false,
+        "Strikethrough": false
+      },
+      {
+        "FontSize": 13.333333015441895,
+        "Foreground": 6
+      },
+      {
+        "FontSize": 16.0,
+        "FontWeight": 7,
+        "Formatter": 2,
+        "Underline": false,
+        "Strikethrough": false
+      },
+      {
+        "FontSize": 13.333333015441895,
+        "Foreground": 8,
+        "Formatter": 2,
+        "HorizontalAlignment": 3,
+        "Underline": true,
+        "Strikethrough": false
+      },
+      {
+        "FontSize": 13.333333015441895,
+        "Foreground": 6,
+        "Formatter": 2,
+        "HorizontalAlignment": 3,
+        "Underline": false,
+        "Strikethrough": false
+      },
+      {
+        "FontSize": 12.0,
+        "Foreground": 6,
+        "Formatter": 2,
+        "HorizontalAlignment": 3,
+        "WordWrap": true
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "#FF000000",
+        "Accent 1 -50",
+        "[AUTO]General",
+        "Center",
+        "Top",
+        "@",
+        "#FF7F7F7F",
+        "Bold",
+        "#FF538BD5",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "2,4": 0,
+      "7,0": 1,
+      "10,3": 2,
+      "13,3": 2,
+      "16,3": 3,
+      "18,3": 4,
+      "21,3": 5,
+      "22,3": 5,
+      "23,1": 6,
+      "25,1": 7
+    },
+    "SheetStyle": {
+      "FontFamily": 9,
+      "Underline": false,
+      "Strikethrough": false
+    }
+  },
+  "Spans": [
+    "7,0,2,19",
+    "16,3,1,13",
+    "25,1,2,17",
+    "10,3,2,13",
+    "13,3,2,13",
+    "2,4,4,11",
+    "18,3,2,13",
+    "23,1,2,17",
+    "21,3,1,13"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "Title": "ログイン",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsBuiltInPage": true,
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//B/S/LV0vnn7XoAz6ldX9bNQgII96J1JQLwHRGEnd2hJxqLLY2ujGxoqp26iny4r7x0gQC2adKwSeLAsI5YXpuncSfkD1RjAJqFQSIOJjgI27sHVeF1GfMbRZ7JHx+7sWM8qs7TkGXwDHExi3HRRSHA9qSQuoeUJUKPRRaQyF2sXjkyNBL5D8uh0Qzn2pedi9Zy0ZKbfX0ep84e+k2wNApKViZhWssseos6n4QuAqdh06/dV1qyvqxrUShAGrNkzf0beyj+qlFlHr1IVRp9mT+nOYtMvU+981Q02ZuB8mValY4124fSwATdvYlWWVPQowXsZnhrpPLXXW/XFZn6okLA2YXZ88bxPT+FI8d9NXevqW0Ti5epL2U2sEOfwV80Q2GUqkSMpD0UlOHYs7UazxfXeReCabY3UNZfDyijWlIwv8lB+WXaaDO2SKux3aYT/PlyCLO/kouSeIZCBq9vJETWCMLamz8QioknfvavUDorZenUU2+5K1LfISjPlhyxeAv70svYsfXsp+1F0Viajv5zU61lfwxfKMvCbRh1ls9RC3w0nHKId1VqqoWZKopMkdYwgAs6KQFyqbCcmQdBCGPR3PM0zk2NqiCjTYPOyHEsleF/x/zPCohj5bud3+1QCB9fmQ+FuYzzeWqEqSGwKGk9G9fdnLHTKyVznz6ZnGGeRYqzS5ESC19mgSnz74Gj5owK8C3KB/Zqf8LJzWyrpiirQpkPOLOZURR45fOGUbmcbnhfXq36pmbhe5UwSUyyVTVZNPSmC/UP8Vx9o2oPfoX2xMvzAvrlGomhSVK1DM4epo3hpZflnV5flqlMSVagE4Onvt1dG0RE90zgbzsK3HrzXALHlsZT5rmoFwR24J5Q31KOi0Hv8lRPj4LLo2k8yiQ8bb4DIwxaTsBJ6kQ/eVlQ==|920

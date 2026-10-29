@@ -1,0 +1,136 @@
+{
+  "Rows": {
+    "Count": 34
+  },
+  "Cols": {
+    "Count": 30
+  },
+  "Values": {
+    "31,1": "更新"
+  },
+  "AttachInfos": {
+    "1,1": {
+      "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "ymia_m_opcard_mail",
+        "RowIndex": 1,
+        "ColumnIndex": 1,
+        "RowCount": 29,
+        "ColumnCount": 26,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
+        "RowHeaderContextMenu": {
+          "ContextMenuItems": [
+            {
+              "Text": "挿入",
+              "Visible": true,
+              "OperationType": 2
+            },
+            {
+              "Text": "削除",
+              "Visible": true,
+              "OperationType": 3
+            },
+            {
+              "Text": "複製",
+              "Visible": true,
+              "OperationType": 4
+            }
+          ]
+        },
+        "ColumnOperation": 2,
+        "CommitType": 1
+      }
+    },
+    "2,1": {
+      "NameUsedInJavaScript": "社員名",
+      "BindingInfo": {
+        "TableName": "ymia_m_opcard_mail",
+        "ColumnName": "社員名",
+        "GUID": "26a11695-743a-462b-82c5-9ddf6d6027d4"
+      }
+    },
+    "2,9": {
+      "NameUsedInJavaScript": "メールアドレス",
+      "BindingInfo": {
+        "TableName": "ymia_m_opcard_mail",
+        "ColumnName": "メールアドレス",
+        "GUID": "1b54b061-30fb-4ba7-b60b-7fcba0bcbf48"
+      }
+    },
+    "31,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "リストビュー1",
+            "UpdateType": 3
+          },
+          {
+            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+            "MessageFormula": "メール送信先を更新しました！"
+          }
+        ],
+        "Text": "更新",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "2,9": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "2,1,1,8",
+    "2,9,1,17",
+    "31,1,2,6",
+    "3,1,27,26",
+    "1,1,1,8",
+    "1,9,1,17"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "発注管理画面",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//4HuUW3FIWPCyfSsPcIHWNyd5E7N0t6N65/m+oLcu4WznJU5GQ4kOUyW6jw8+tAgfk2l7udwgJQ+KfHQMb9gbXXwfG7NY/KMV6wq9v8HgyBfAqA6oqwrXwIJY2CTI6lYYQyR1Gdl7V+DCY6R0jOlvgDoS3FZpCHKXUQZtQ3L3KyuiBzUthfGHe1gCHaB4dGSU1jLAmK88De9bZjF+Q01369OsZPg1JNNSuwy5RJeQQBIoqh1si6d025slspFL868LnxpXOQnb9bKjeFK+4iD+pdc/TWE3iVhmKGjZSN97aGSo5SLHlJH1qAsOm7WHhHw13yj89ybufWaueXOZKFmSYE+53sp8q/j9OUTMVa6VuKZJvt80zlpzTtHTzD/nz5wTykl2J7pVfdh4oY4IoBwsYg9RwFHfF+3/0zFIm6E1cPO2H2dB9Aqe/IZ229/a424MPQnrV/XzQt449FUSC+92Hy/crrIPviZd/CxczEdiw9jOnu6SoiS0dzhGpxDKlhDIV1MDPed8d120NRoR1AXhUtpbaMYXZao1JGlJr4rArec2gSlnWnX4h49YfTafY9KGwia51fDJ4KSwZWk1b0BKqwMeIkXcSpKW77iA6Kp+ZEp6weUY/Zkw61JswyDk7wtQlx7GONP6ZZ804aRCck8OZR1jqNkpRRQ6iZhphZUB2xs/rYH0+gHm8yC5Yyf0uZ4rdXkfXtHUBe6/Pr4KQ1qfnMVmvKdzY3cluu+q22mhum5EiBqnoc2tnZxARgbHzw3MqhlWLTtjuTSkKLLIXarfwCdwS0aKNRGrIpcIUQGly/qyUxeLM9tGXpuxNSoibdeB2j1x7ReN/9qjMWtq8ZrxFvtdyYKo1H+hB3V+QINLQR7LhsnGRHMGSiRUC8YISDcix8HHPGatEy4QYmj6mFaL8w==|920

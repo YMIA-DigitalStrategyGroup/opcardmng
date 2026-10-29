@@ -1,0 +1,67 @@
+{
+  "Name": "未確定分メール送信",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.DailyScheduleTriggerSaveData, ServerDesignerCommon",
+      "StartDateTime": 45988.541666666664,
+      "ScheduleRunInDebugServer": false
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "MailBody",
+      "ID": "372436341e8b46bca65d1cdc78bdcf79"
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "SqlServerRemacsWeb",
+      "Params": {},
+      "SqlStatement": "select (部品コード + char(9) + 部品名称 + char(9) + STR(発注数) + char(9) + FORMAT(希望納期, 'yyyy/MM/dd') + char(9) + format(発注日, 'yyyy/MM/dd') + char(9) + 仕入先コード + char(9) + 仕入先名称) as メール情報 from ymia_t_opcard_hachu where ステータス='未処理'",
+      "ReturnsName": "QueryResults",
+      "ID": "f27dc39f5f3d48ca8067686289579632"
+    },
+    {
+      "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+      "LoopInfo": {
+        "$type": "Forguncy.Model.CountLoopInfo, ServerDesignerCommon",
+        "LoopCount": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=QueryResults"
+        },
+        "LoopItemParamName": "Item"
+      },
+      "CommandList": [
+        {
+          "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+          "ParameterName": "MailBody",
+          "ParameterValue": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=MailBody&Item.メール情報&CHAR(10)"
+          },
+          "ID": "25d8d3325d1c4173a0480c2aa961e29a"
+        }
+      ]
+    },
+    {
+      "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
+      "From": "ymia_system@yanmar.com",
+      "EnhancedRecipient": {
+        "TableName": "ymia_m_opcard_mail",
+        "TableColumn": {
+          "TableName": "ymia_m_opcard_mail",
+          "ColumnName": "メールアドレス",
+          "GUID": "b4b91e55-a7d1-41a3-ae0b-2319de721a54"
+        },
+        "IsMultiRecipient": true
+      },
+      "Subject": "OPカード発注情報",
+      "Content": {
+        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+        "SerializeProperty": "=MailBody"
+      },
+      "ID": "ad93918ad93247a3b4176abb28cac166"
+    }
+  ]
+}

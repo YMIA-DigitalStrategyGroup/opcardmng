@@ -1,0 +1,150 @@
+{
+  "Name": "OPカード",
+  "DataSources": [
+    {
+      "Name": "opcard_pdf",
+      "GUID": "a9e1b2ae-e060-472b-af82-263c732da8a3",
+      "DataSourceSetting": {
+        "TableName": "ymia_m_opcard_pdf",
+        "BindingInfos": [
+          {
+            "GUID": "79e8dce8-649d-43cf-927f-7899a027fa79",
+            "BindingInfo": {
+              "TableName": "ymia_m_opcard_pdf",
+              "ColumnName": "部品コード",
+              "GUID": "d158a781-97c6-4054-a5e2-5df05249f962"
+            },
+            "ColumnName": "部品コード"
+          },
+          {
+            "GUID": "30084bf1-c81f-4d84-80e0-97c092a9366a",
+            "BindingInfo": {
+              "TableName": "ymia_m_opcard_pdf",
+              "ColumnName": "部品名称",
+              "GUID": "5302426e-fdb2-42fd-bc62-21dba3cb2052"
+            },
+            "ColumnName": "部品名称"
+          },
+          {
+            "GUID": "c7a4d9e1-3956-426b-be04-4d1160016875",
+            "BindingInfo": {
+              "TableName": "ymia_m_opcard_pdf",
+              "ColumnName": "規格",
+              "GUID": "ea5fbd5a-92a3-4f5e-8002-bc0e249201f7"
+            },
+            "ColumnName": "規格"
+          },
+          {
+            "GUID": "ebd35e54-e045-44a2-a703-2f474f28c773",
+            "BindingInfo": {
+              "TableName": "ymia_m_opcard_pdf",
+              "ColumnName": "ロケーション",
+              "GUID": "989bc42f-b5f9-45c5-b87d-fa0257b513f5"
+            },
+            "ColumnName": "ロケーション"
+          },
+          {
+            "GUID": "12f6c589-64e2-4d2d-a516-c257673cfad6",
+            "BindingInfo": {
+              "TableName": "ymia_m_opcard_pdf",
+              "ColumnName": "発注点",
+              "GUID": "b7b9db91-1296-4bd3-a09d-f989c572c010"
+            },
+            "ColumnName": "発注点"
+          },
+          {
+            "GUID": "6d3bc207-a20b-43bf-b985-48a3a3a76688",
+            "BindingInfo": {
+              "TableName": "ymia_m_opcard_pdf",
+              "ColumnName": "LT",
+              "GUID": "92208d75-9063-43e1-be65-6c6b118a4f7c"
+            },
+            "ColumnName": "LT"
+          },
+          {
+            "GUID": "e58f27a3-c6ec-49d6-984d-eba7e7d18449",
+            "BindingInfo": {
+              "TableName": "ymia_m_opcard_pdf",
+              "ColumnName": "発注数",
+              "GUID": "cb419aa4-98a9-4068-868d-86a9824d8935"
+            },
+            "ColumnName": "発注数"
+          },
+          {
+            "GUID": "d4f8696a-1085-4262-b728-04bcefad4cb7",
+            "BindingInfo": {
+              "TableName": "ymia_m_opcard_pdf",
+              "ColumnName": "単位",
+              "GUID": "995a8e2f-9d42-4dbd-83d6-72f665fa2179"
+            },
+            "ColumnName": "単位"
+          },
+          {
+            "GUID": "97eec129-b3a2-46c3-b105-82106b17b1e9",
+            "BindingInfo": {
+              "TableName": "ymia_m_opcard_pdf",
+              "ColumnName": "仕入先名",
+              "GUID": "1e350006-4a93-4515-a7a1-6a77559e7c94"
+            },
+            "ColumnName": "仕入先名"
+          },
+          {
+            "GUID": "54668cfa-07d5-484e-9f4e-5a01ea44ab0f",
+            "BindingInfo": {
+              "TableName": "ymia_m_opcard_pdf",
+              "ColumnName": "所番地",
+              "GUID": "4b82bde3-0dc6-4a12-94cb-6aabe3945875"
+            },
+            "ColumnName": "所番地"
+          }
+        ],
+        "OrderBySqlCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "ymia_m_opcard_pdf",
+                "ColumnName": "ロケーション",
+                "GUID": "94d37c8c-3ba7-4c77-9b3f-51e49c2937d6"
+              },
+              "Order": 0
+            }
+          ]
+        }
+      },
+      "ColumnsType": [
+        "string",
+        "string",
+        "string",
+        "string",
+        "integer",
+        "integer",
+        "integer",
+        "string",
+        "string",
+        "string"
+      ]
+    }
+  ],
+  "PermissionData": {
+    "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionData, Forguncy.RbacPermission.Core",
+    "permissionResource": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionResource, Forguncy.RbacPermission.Core"
+    },
+    "permissionBindings": [
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionBinding, Forguncy.RbacPermission.Core",
+        "activeReportPermissionType": 1,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionBinding, Forguncy.RbacPermission.Core",
+        "activeReportPermissionType": 2,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      }
+    ]
+  }
+}

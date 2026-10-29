@@ -1,0 +1,27 @@
+{
+  "Name": "不要データの削除",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.OneTimeScheduleTriggerSaveData, ServerDesignerCommon",
+      "StartDateTime": 45770.791666666664,
+      "ScheduleRunInDebugServer": false
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "MySql1",
+      "Params": {},
+      "SqlStatement": "delete from ymia_m_opcard_buhin",
+      "ID": "dc87e9f3ea204514b50fdb342089ec38"
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "MySql1",
+      "Params": {},
+      "SqlStatement": "delete from ymia_t_opcard_chuzan",
+      "ID": "014be1c22cdf49758ed1265b6f7fda73"
+    }
+  ]
+}

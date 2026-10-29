@@ -1,0 +1,256 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 3.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0
+    ],
+    "Count": 33
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      28
+    ],
+    "Count": 32
+  },
+  "Values": {
+    "0,1": "MAX番号",
+    "2,2": "行追加",
+    "30,1": "更新"
+  },
+  "Formulas": {
+    "0,5": "MAX(AC6)+1"
+  },
+  "AttachInfos": {
+    "2,2": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "リストビュー1",
+            "UpdateType": 1,
+            "UpdateValues": [
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=発注時コメントマスタメンテ!AC6"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=発注時コメントマスタメンテ!F1"
+                }
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=発注時コメントマスタメンテ!C6"
+                },
+                "Value": "新規"
+              },
+              {
+                "Column": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=発注時コメントマスタメンテ!J6"
+                }
+              }
+            ],
+            "InsertInRear": true
+          }
+        ],
+        "Text": "行追加",
+        "TemplateKey": "_RS_Normal_Style2",
+        "Icon": {
+          "Name": "Application/001_add_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "4,1": {
+      "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "ymia_m_opcard_commentmst",
+        "RowIndex": 4,
+        "ColumnIndex": 1,
+        "RowCount": 25,
+        "ColumnCount": 30,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "NoItemSetting": {
+          "NoItemImageSize": 25.0
+        },
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "AllowEditInListview": true,
+        "ShowDeleteButton": true,
+        "RowHeaderContextMenu": {
+          "ContextMenuItems": [
+            {
+              "Text": "挿入",
+              "OperationType": 2
+            },
+            {
+              "Text": "削除",
+              "Visible": true,
+              "OperationType": 3
+            },
+            {
+              "Text": "複製",
+              "Visible": true,
+              "OperationType": 4
+            }
+          ]
+        },
+        "ColumnOperation": 2,
+        "MoveFocusHorizontally": true,
+        "CommitType": 1
+      }
+    },
+    "5,2": {
+      "NameUsedInJavaScript": "コメント概要",
+      "BindingInfo": {
+        "TableName": "ymia_m_opcard_commentmst",
+        "ColumnName": "コメント概要",
+        "GUID": "3a871928-6ea4-4f75-9ab7-800951655198"
+      }
+    },
+    "5,9": {
+      "NameUsedInJavaScript": "コメント内容",
+      "BindingInfo": {
+        "TableName": "ymia_m_opcard_commentmst",
+        "ColumnName": "コメント内容",
+        "GUID": "306da970-d626-45b0-b1c6-b5ab01409dcf"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "InputCharOption": {
+          "Format": "K"
+        }
+      }
+    },
+    "5,28": {
+      "NameUsedInJavaScript": "RecordId",
+      "BindingInfo": {
+        "TableName": "ymia_m_opcard_commentmst",
+        "ColumnName": "RecordId",
+        "GUID": "2286cc5a-b930-4ac7-8f69-c8c36433f06e"
+      }
+    },
+    "30,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": "マスタを更新しますか？",
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+                    "ListviewName": "リストビュー1",
+                    "UpdateType": 3
+                  },
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "マスタを更新しました！！"
+                  }
+                ],
+                "ID": "9c93d294-ac14-4e51-b5c2-1dd2c8fa7473"
+              }
+            ]
+          }
+        ],
+        "Text": "更新",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0
+      },
+      {
+        "Background": 1
+      },
+      {
+        "FontFamily": 2
+      },
+      {
+        "FontFamily": 2,
+        "Formatter": 3
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "#FFFFFF00",
+        "Accent 1 -25",
+        "Body",
+        "@"
+      ]
+    },
+    "CellStyles": {
+      "0,5": 0,
+      "2,2": 1,
+      "5,2": 2,
+      "5,9": 3
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "5,2,1,7",
+    "30,1,2,5",
+    "5,9,1,19",
+    "2,2,1,7",
+    "0,5,1,4",
+    "6,1,23,30",
+    "4,2,1,7",
+    "4,9,1,19"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "発注管理画面",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//JfQ5wVsYLMlJSUjz347t+pQ5a3lCMfcAlLF5NL41mY62ZkKhoDpJ+mQEELzvgDxjZ664w9mSMV1yWK7HtFXDcdrTdX0AhatRivSjHX96gS3KpbWC5JHQqavKKI6wldFPX2SYVIp1XghEv6KTqw+qHQsHnZ/OCNZ9Mx83jmdVxLO7u3juKpGJJY+f4D3c1N0bwct5V/VpP/A3J3j+6r30p9e/k7au/2NhEAGV0kz/p5ARj3O1GuFFzRfXbkfgPB41eSiwym93nP4d+cif/fRMXzvJ8YuNjOCyHUACmBgTnwtxdrmgx8Ho+YUvKXuYFCVjVWDUQXXq10ox5uB++W7L8RrzqJALJjJOLG0023cOW9PfxvWYzrUiH1aciY3f6Z9ZuXmjZrbntZRoSl1wgPPUXUXx5DlqHI0MUBhkofKcw5+kCmIRVTDUHQysBsd6hM6NaQWuemdRHw1qO9DA9wX1/S2R4N2igaTFA9cb5X02eL6ZLMBRYvEyAer37ScVzjEX9rDUMw7HMMDVyQI+HDAQyCIt+hanCcP+Vyd2ZB7KtZvgwPBDI1AilCB5PmH3wtP4dDR7hfsivfsZY//LDxA4Bi7PDyoZrudUJA1YVFQhZoANxGE/ECexKKj2HFfcYJwed2ztozcz494eQdtbUvepDH5zxdneuxrBiuwh0rHGLECMO80amKWLbWAR/hh/ll2wQztlYZM69p9/et9Hiuy+bxvhtluvQHlF2jFFct546lW/vAlgbn62E/Zlr5aqGAExPg17TOg+BAbQkf29VirHC4V7lTzf7/yr1NRwR8QBB5RuJ813ZSx9IIOFecUy+VhKUAwiheg+N1PMhyMIHDogkx6m/TJEF/+Dnkq9fi5q4sPMqRc/FEEHcG/C+sIGYnMnVDCKFrCYFXNR0+QNGe6tYA==|920
