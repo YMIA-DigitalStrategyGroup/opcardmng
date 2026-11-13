@@ -254,7 +254,17 @@
   },
   {
     "ModuleName": "PCPage/ログインバーコード印刷",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-11-13T09:50:16.6752315+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\ログインバーコード印刷.json",
+      "Pages\\ログインバーコード印刷.rd"
+    ]
   },
   {
     "ModuleName": "MasterPCPage/FGC_ユーザーマスターページ",
