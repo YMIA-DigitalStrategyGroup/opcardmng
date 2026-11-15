@@ -70,7 +70,16 @@
   },
   {
     "ModuleName": "Table/thatchu",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-11-15T16:13:32.1900251+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\Remacs\\thatchu.json"
+    ]
   },
   {
     "ModuleName": "Table/mtorihiki",
