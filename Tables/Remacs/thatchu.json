@@ -151,5 +151,14 @@
   "PrimaryKey": [
     "HATCHU_NBR"
   ],
+  "Relations": [
+    {
+      "PrimaryTable": "mtorihiki",
+      "PrimaryColumn": "TORIHIKISAKI_CODE",
+      "ForeignTable": "thatchu",
+      "ForeignColumn": "TORIHIKISAKI_CODE",
+      "IsDetailTableRelation": false
+    }
+  ],
   "Indexes": []
 }

@@ -98,6 +98,90 @@
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
           {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "再発行回数",
+            "TableValue": {
+              "TableName": "ymia_m_opcard_pdfhdr",
+              "TableValueType": 3,
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "ymia_m_opcard_pdfhdr",
+                  "ColumnName": "発注番号",
+                  "GUID": "da22135f-28fe-4700-baf6-29f65b667134"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=メール送信画面!H2"
+                }
+              }
+            },
+            "ID": "d08d9a82894e4437824fb00accf44c73"
+          },
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "再発行回数",
+            "ParameterValue": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=メール送信画面!再発行回数+1"
+            },
+            "ID": "28ed934ea0424ee9a8ecea1132820f94"
+          },
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "ymia_m_opcard_pdfhdr",
+            "UpdateType": "addOrEdit",
+            "ShowConfirm": false,
+            "RowsToUpdate": 1,
+            "RowsToUpdateCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "ymia_m_opcard_pdfhdr",
+                "ColumnName": "発注番号",
+                "GUID": "6e30af40-b1cf-4f7a-9771-8bbd559a359c"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=メール送信画面!H2"
+              }
+            },
+            "UpdateBindingValues": [
+              {
+                "BindingInfo": {
+                  "TableName": "ymia_m_opcard_pdfhdr",
+                  "ColumnName": "発注番号",
+                  "GUID": "947ce014-fef9-428f-a419-d7db84ce3a4c"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=メール送信画面!H2"
+                }
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "ymia_m_opcard_pdfhdr",
+                  "ColumnName": "発注コメント",
+                  "GUID": "4f587c98-b753-4f03-83fa-889f72f9d5df"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=メール送信画面!コメント"
+                }
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "ymia_m_opcard_pdfhdr",
+                  "ColumnName": "発行回数",
+                  "GUID": "ffb8f9c2-36ab-4844-940b-65d9c295f326"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=メール送信画面!再発行回数"
+                }
+              }
+            ]
+          },
+          {
             "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
             "ServerCommandName": "PDF発行処理_サーバ側",
             "Parameters": [
@@ -1171,4 +1255,4 @@
       "Formula": "メール送信画面!$B$27"
     }
   ]
-}//6JBDkp6SlLwpJMwDbw2Y2tjMXJFw0R2DmQekpsE5o8mUyT6mf9SRCsj4Un4O7tdG2meCTuqQtRcFzq0MFL/fzMfyzmv86BsXtHwMlf37kdSxDjEe41owXLGaBbaUwpm7OKKEdKYkMMqz9v0y9k9003R/RmlfAx1aWrYyqIJxaKdBWKxp2PA3qIdDi3OFoF4oSwEyfZg8Gub5sRXZInhpgEyJdJJvKbd9bDlHQRBaRMy7HiP4jWTaqzJ0FWc9Xf1ogqvyGQ9uzHHEiSEICAGMaspB7msJErdIBPDOA9Io5PI8uhCr4lmhMqzI3/kiTbAXAOHuFEPXfG1Fos4fIhd3L51tIMyoVV4SqiPGOzt37LnkOAMBBOgt2HSINiP5y5+HlTeSuiUg3S4g1MvFgVR2VG5sMMpQk+WAn8nvkTVAUAlPFYpfY/c+piKP2URcdEI+7Q3OzNToQyqMA3BYZP6+4EaPp9yyoYaweTDitaSDxYkZ4FiUciF4LQI8ZmL8qS3Q6VjPk68MQwdsmw0DtckAxQqzk+8rVWo1Z9nU/VTmgr8h69ctOT86Uol0zD6RI3N+rf3VdXJctNvfbeQXQydnJFOvHjZgunlEb52Ie/DmkL8UTYx6w93qKA2pF41e0s4xCO1iPpRF+v11YTfyB2TD/096qIFFK3LUytFnCdgzv0svRrAqW3RxWHmajcRizJpi5w+54iv/q63h6WI8UNhw6xt/wVaYiFrUbpCcVLpCcd3PrRBt8FtKCrkYaGQY55CEwvQdc3g0Y8zsvlHwZrMgSL8PaYfKHSXbohjsnxdFnsRviO4JMGu8iFws8VLl5jabVL06yu+YiULfVXqg/hj5kd/QM4tXg+0xXER2TZ5mrRN0cEfvvPK1MBBMfD0j6gPPCTgiAu5i9jRSy4KMa+VHPQ==|920
+}//DECimrcJ1ZCh7lC2aekDg7C3wavReYWMOijgxQdjZ6hHzKf0N/RSi4JdbTLfSwqO79V2w9nOYgIr7sZl3ofZLsoSWHZLO85EQ9djrcxPBj/XL5eplkFZnruv1PGqZv34uFV+mgAq18WsXZzGXNx8nPz7UgGUcxSU3E1XUQkqkaS2h70/XkOXVkRcQJN2h1F1zZo7RL1zpA4/X+mv83GAVNavHmQoxLuQlyBEdj7CM5MyLENdMkv/73Ugrdyze0KSmZvPOdfzCWQ6OAtuX1V3RIRXglDrQ/dlivuw0oiF8OQoF4yrVG3w50yyryFpgVK3/MOtbuTq4Di5YgBQ4UasZmoVc6zGDk3nMdtZ4/u9yT9RONbuDybWBGhJfw3Z93cUEdVybw4fk2Iw3NtlshYsAQJ0eufwsURwvmWNsNR9DbqFCCuwp78RbX0OZELRIXoeBBfS0tYalPWCbt4YE0XNDYk2oUmbfdN0RMx2wkrdAPGAHu4Or4GJoo/pc4eq1OuaH58hSIH3asFlBX0j/CCjGFwmbm7GKNJ5UgZm3sIdDDScmbE6iqWucIUrwa7KXfpz3zrKoe+5SYD+jPbF+x9HK8nSAoctuzzB0rpv2uHNG9SkK/A+ZRg21fy79ljFQXel01QWyCFZsP7NdwRVvALA3em4BaVBavrzglG/wRARsn53BwBEuGPO6iShum0d6eBDXiVZivoJhEEQNFzQePHm8txlr3NX95bjl8RCz910L50Nv94N4dP2bEjdvpxu+VaW2Ifkt+ossW5w/u/E8tksQDzDDT7jfC9ij3DH5aAGNmdQMvRpcYH0PUn52b48zqiNvwSbbmq3R3Z82mCs641MmGRO/azxTTDXGH6WW18u5kjezzybca20Nm/segI2blPg1Yxp++ul+4oDWgkkrUJ7ww==|920

@@ -46,19 +46,24 @@
     "7,15": "発注先CD",
     "7,17": "発注先名",
     "7,20": "発注先",
-    "7,31": "品番",
+    "7,31": "EDI区分",
+    "7,34": "品番",
     "7,38": "品名",
+    "7,41": "品名",
     "7,46": "数量",
-    "7,49": "納期",
+    "7,49": "数量",
+    "7,52": "納期",
     "7,55": "製番",
+    "7,58": "製番",
     "7,69": "購買担当"
   },
   "Formulas": {
     "0,7": "TODAY()",
     "0,17": "EDATE(H1,-1)",
-    "8,67": "ODATA(\"ymia_m_opcard_pdfhdr?$select=発行回数&$filter=発注番号 eq \"&IF(ISBLANK(K9),\"null\",\"'\"&K9&\"'\"))",
+    "8,67": "ODATA(\"ymia_m_opcard_pdfhdr?$select=発行回数&$filter=発注番号 eq \"&IF(ISBLANK(E9),\"null\",\"'\"&E9&\"'\"))",
     "8,2": "IF(ISERROR(BP9),0,BP9)",
-    "8,73": "ROW()-1"
+    "8,73": "ROW()-1",
+    "8,31": "ODATA(\"mtorihiki?$select=EDI_KUBUN&$filter=TORIHIKISAKI_CODE eq \"&IF(ISBLANK(P9),\"null\",\"'\"&P9&\"'\"))"
   },
   "AttachInfos": {
     "3,31": {
@@ -187,7 +192,7 @@
                     },
                     "Value": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=発注書一覧画面!AF9"
+                      "SerializeProperty": "=発注書一覧画面!AI9"
                     }
                   },
                   {
@@ -198,7 +203,7 @@
                     },
                     "Value": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=発注書一覧画面!AM9"
+                      "SerializeProperty": "=発注書一覧画面!AP9"
                     }
                   },
                   {
@@ -209,7 +214,7 @@
                     },
                     "Value": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=発注書一覧画面!AU9"
+                      "SerializeProperty": "=発注書一覧画面!AX9"
                     }
                   },
                   {
@@ -220,7 +225,7 @@
                     },
                     "Value": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "=TEXT(発注書一覧画面!AX9,\"yyyy/MM/dd\")"
+                      "SerializeProperty": "=TEXT(発注書一覧画面!BA9,\"yyyy/MM/dd\")"
                     }
                   },
                   {
@@ -527,36 +532,72 @@
       "BindingInfo": {
         "TableName": "thatchum",
         "ColumnName": "HATCHU_NBR",
-        "GUID": "f40700b1-0cd6-4d6b-9f16-6206325fd1ab",
+        "GUID": "734cd961-03e4-4bd8-b64b-6c8d3c136c9d",
         "RelationBinding": {
           "RelatedTable": "thatchu",
           "RelatedColumn": "HATCHU_NBR",
-          "DisplayColumn": "TORIHIKISAKI_NAME"
+          "DisplayColumn": "TORIHIKISAKI_CODE",
+          "NextRelationBinding": {
+            "RelatedTable": "mtorihiki",
+            "RelatedColumn": "TORIHIKISAKI_CODE",
+            "DisplayColumn": "TORIHIKISAKI_NAME"
+          }
         }
       }
     },
     "8,31": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "IsBounding": true,
+        "DataSource": "mname",
+        "ValueColumnBindingInfo": {
+          "TableName": "mname",
+          "ColumnName": "MEISHO_CODE",
+          "GUID": "883c9f75-cc53-4c66-a3fa-8356dcf9982b"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "mname",
+          "ColumnName": "MEISHO",
+          "GUID": "d260d081-422f-481d-8446-a4d1cab34e8f"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "mname",
+            "ColumnName": "MEISHO_KUBUN",
+            "GUID": "2b701e9b-fa0f-4da4-872b-03648ac2d097"
+          },
+          "Value": "117"
+        },
+        "AddNullItemWhenBinding": true,
+        "NoneItemText": "しない"
+      },
+      "RulesGuidList": [
+        "c14fa919-f8a1-467f-b06b-8e13a02f9013"
+      ]
+    },
+    "8,34": {
       "BindingInfo": {
         "TableName": "thatchum",
         "ColumnName": "HINBAN",
         "GUID": "bb609d4d-344c-4cf9-b881-3c41cf668a8b"
       }
     },
-    "8,38": {
+    "8,41": {
       "BindingInfo": {
         "TableName": "thatchum",
         "ColumnName": "HINMEI",
         "GUID": "69affd91-0038-4aa1-9a32-438d3fbe2772"
       }
     },
-    "8,46": {
+    "8,49": {
       "BindingInfo": {
         "TableName": "thatchum",
         "ColumnName": "SURYO",
         "GUID": "4b569fad-c5a9-4158-b832-835485913401"
       }
     },
-    "8,49": {
+    "8,52": {
       "BindingInfo": {
         "TableName": "thatchum",
         "ColumnName": "HATCHU_NBR",
@@ -568,7 +609,7 @@
         }
       }
     },
-    "8,55": {
+    "8,58": {
       "BindingInfo": {
         "TableName": "thatchum",
         "ColumnName": "SEIBAN",
@@ -895,11 +936,38 @@
       "8,18": 1,
       "8,19": 1,
       "8,20": 1,
-      "8,31": 1,
+      "8,31": 2,
+      "8,34": 1,
+      "8,35": 1,
+      "8,36": 1,
+      "8,37": 1,
       "8,38": 1,
-      "8,46": 19,
-      "8,49": 18,
+      "8,39": 1,
+      "8,40": 1,
+      "8,41": 1,
+      "8,42": 1,
+      "8,43": 1,
+      "8,44": 1,
+      "8,45": 1,
+      "8,46": 1,
+      "8,47": 1,
+      "8,48": 1,
+      "8,49": 19,
+      "8,50": 1,
+      "8,51": 1,
+      "8,52": 18,
+      "8,53": 1,
+      "8,54": 1,
       "8,55": 1,
+      "8,56": 1,
+      "8,57": 1,
+      "8,58": 1,
+      "8,59": 1,
+      "8,60": 1,
+      "8,61": 1,
+      "8,62": 1,
+      "8,63": 1,
+      "8,64": 1,
       "8,67": 1,
       "8,69": 1,
       "8,70": 1,
@@ -934,26 +1002,28 @@
     "4,13,1,10",
     "7,69,1,4",
     "8,69,1,4",
-    "8,46,1,3",
-    "7,46,1,3",
-    "8,38,1,8",
-    "7,38,1,8",
-    "8,31,1,7",
-    "7,31,1,7",
     "8,15,1,5",
     "7,15,1,5",
-    "8,20,1,11",
-    "7,20,1,11",
     "8,2,1,2",
     "7,2,1,2",
     "8,10,1,5",
     "7,10,1,5",
     "8,4,1,6",
     "7,4,1,6",
-    "8,49,1,6",
-    "7,49,1,6",
-    "8,55,1,7",
-    "7,55,1,7"
+    "7,49,1,3",
+    "8,20,1,11",
+    "7,20,1,11",
+    "8,49,1,3",
+    "8,41,1,8",
+    "8,34,1,7",
+    "8,52,1,6",
+    "8,58,1,7",
+    "7,34,1,7",
+    "7,41,1,8",
+    "7,52,1,6",
+    "7,58,1,7",
+    "8,31,1,3",
+    "7,31,1,3"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -973,10 +1043,26 @@
       ]
     },
     "RowBreakLines": [],
-    "RepeatRangeSettings": []
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "thatchum",
+    "ConditionFormatRulesCollection": {
+      "Rules": [
+        {
+          "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+          "Operator": 1,
+          "Value1": "=0",
+          "Value2": "=1",
+          "GUID": "c14fa919-f8a1-467f-b06b-8e13a02f9013",
+          "StyleInfo": {
+            "Background": "#FFFFB6C1",
+            "Foreground": "#FF8B0000"
+          }
+        }
+      ]
+    }
   },
   "PrintInfo": {
     "PaperSize": {},
     "Margin": {}
   }
-}//Jww7sBDK7IdxMaCjJD+atc2S9ttwZwS4Q6GiMefAEs6JC1zRN53EgIsOL30ZYY74lIEPGW1Vd6Mk6REMNcGzb7cOMGnQ/FnQ8ENbPfa1HM2xkJSketXHtQcQb6xLkNDnMpDcCm0WSldMjt8OsBNAqcB7drhHWpv1iSoxOHaiLmgZTclLMDKzUym+sIrGKKddkFpjW+SVOY3Wn5zrqVAvy5gU6ck2uOQQUblTKFFBkx9FwozCQKtD0p7fcMQFTYIJMvlBoV61JIKsBXgbUD4gARGz6+3AkqQ7eowoLGkprqfLoLgqeElW20V8gmwfY4vPkEAVCvAGs1P8WZzi9WGbjZjjvhjDQP1viRVECcTkwvd7MSdylYmAam9Zz4C6HBUnmN5CS9dnmTb9JfLZ7uN4q5rDarHKzDrQw3YUUkU5nqs1p4zC8QKKnr9qFITsYw9/WhwHRI9frgnLEDH5hsA7XKTdddkluKippof9r313eAkT8UrdfEGBwRp7CXG5qRAF0DZynzf6Jf6g+IXC9C3kx7hWwGdjjHVEGPlNTKXEwJcSMqU8xrYyGz+nGVIfrU3AR/AgmGHy4gFduKspecC/vdvjwDer+od6k/cgElCcKDfSYOiWd2ZhmVPpKPEa7CvePm3n3FpH/vbdzpgkoVPncB654pxBZp3OjGuWeKNWWSqXe9glxazE6zUp8NcOuLPQ4JDyzeodxbs5mY1YCkfiE2FRFMJ6lt4XppIl3TONPHa5IYakRehjokvQjAog+jSYEJMMzUbZO8wD/I84fFHmwnDARGN1dalzgtH3D5to7wzE4UnITr7MH7xZM1ExMytq6REKZTRuq5yr93Rbgt3ACQ/7BAybZs6W4FpIq7/2vGIEnaqAi4JI8huyfrReOXSpVjGf0Egduk34FMHgBlj2Qw==|920
+}//tneVUOyWZbMUggmLbLnpUBPnhdADntme7XnqoWEH4GPSaNPxAsdP/wROEovB+IJJGUhKsEiZHnAHvq7FC24woCuatpyA5OGtON+9hn/o6IZBSfwDmWNyfERWpW7rajd0p78QEb2VvUrsKsZQCfVYUU81RR9cGgaOkeAs9C/GQZ6ys9GWj0QZJEp4sZbY9tTeQZ2A+RnjKxAnPgbaLUzGqwVF3NCWSzFq7ttxttCz95vhhqFiKe9zd7KOWeuowPyzHZuxD2B08fiRZ9/ivjlrTHcGU5le+DELmsTDcEylbwaThPTxBe2pgQwqdWh3vA6AViczuaiNqdEbWFAbR7OxT7XRsmdeSKByOE4UBCQNF0BxHGLlGRqoZjXp3gRd50yGI8wjgnCZktZsd4s4QRgF2dLekwUYYKR066Vr3ebjaDOAuL4yqzlrdWo0lqLCp4hDAqGF1HiH4lEaKu9aTG7gKvszr52aH00EuSwMaQ66Y79DwpXl3VzexQ0WqitYjbhIuP+DSKg03cf01NfZuwc4LwSg2b3cb8FmHrD1XqrWLc0wNuQQCejGPz/wKZBJP2aFlzeceWYjVXh5usz45UCcPL3INFUVBQxHdZBaHC4snjft1kDnEX3kzxoaTTy92pqQIvE9Mjcxdf+kUQAlEWyLzzlj8yvVO8wWkobN6eebExfF4/s1AnobStdRKfKcjfG4dgqVhxYVBoUUza8U0hFHtc+fL5Z6tGMzQarb6huxsv0DXc5FY1Ho8E0u6oVeWBv5IwPcMbNqJNTUQQzn6k4FRr7hLrihMOtauwJpLjQzA32QZ3BVYFHAx4i9OQ5if+C7uekdhC5ZFMo+Py2M/PxJyibvRWYSb4um2Rtl661JUPGd37GT4Z6nqN1sCW5oJF0tergJXuKE0H+7d7lNGKWuTg==|920
