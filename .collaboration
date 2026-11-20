@@ -377,5 +377,15 @@
   {
     "ModuleName": "Table/mname",
     "ModuleType": 7
+  },
+  {
+    "ModuleName": "PCPage/発注書一覧画面_VIEW版",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-11-20T12:10:14.3901138+09:00",
+    "ModuleType": 1
   }
 ]
