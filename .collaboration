@@ -9,16 +9,7 @@
   },
   {
     "ModuleName": "Table/ymia_t_opcard_hachu",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-20T12:40:27.0614578+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\SQLServer\\ymia_t_opcard_hachu.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/ymia_t_opcard_chuzan",
@@ -66,17 +57,7 @@
   },
   {
     "ModuleName": "TableView/ユーザー情報ビュー",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-20T12:40:27.0614687+09:00",
     "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\ユーザー情報ビュー.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
@@ -97,16 +78,7 @@
   },
   {
     "ModuleName": "TableView/ymia_v_mhinban_lastest",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-20T12:40:27.0614636+09:00",
-    "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\Remacs\\ymia_v_mhinban_lastest.json"
-    ]
+    "ModuleType": 23
   },
   {
     "ModuleName": "TableView/ymia_v_hinban_leadtime",
@@ -270,17 +242,7 @@
   },
   {
     "ModuleName": "PCPage/発注書一覧画面",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-20T12:07:52.9461314+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\発注書発行\\発注書一覧画面.json",
-      "Pages\\発注書発行\\発注書一覧画面.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/メール送信画面",
@@ -288,17 +250,7 @@
   },
   {
     "ModuleName": "PCPage/発注書画面_複数",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-20T12:41:26.7664407+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\発注書発行\\発注書画面_複数.json",
-      "Pages\\発注書発行\\発注書画面_複数.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/ログインバーコード印刷",
@@ -310,17 +262,7 @@
   },
   {
     "ModuleName": "MasterPCPage/発注管理画面",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-20T13:02:12.276805+09:00",
-    "ModuleType": 3,
-    "ToRemoveFiles": [
-      "MasterPages\\発注管理画面.json",
-      "MasterPages\\発注管理画面.rd"
-    ]
+    "ModuleType": 3
   },
   {
     "ModuleName": "ServerCommand/PDFTEMP2PDF",
@@ -428,32 +370,14 @@
   },
   {
     "ModuleName": "PCPage/発注書一覧画面_VIEW版",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-20T12:10:14.3901138+09:00",
     "ModuleType": 1
   },
   {
     "ModuleName": "TableView/ymia_v_thatchu",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-20T12:12:57.493952+09:00",
     "ModuleType": 23
   },
   {
     "ModuleName": "TableView/ymia_v_thatchum",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-20T12:12:57.4940015+09:00",
     "ModuleType": 23
   }
 ]
