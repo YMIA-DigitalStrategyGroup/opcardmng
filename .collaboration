@@ -9,16 +9,7 @@
   },
   {
     "ModuleName": "Table/ymia_t_opcard_hachu",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-20T18:48:30.9044119+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\SQLServer\\ymia_t_opcard_hachu.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/ymia_t_opcard_chuzan",
@@ -66,17 +57,7 @@
   },
   {
     "ModuleName": "TableView/ユーザー情報ビュー",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-20T18:48:30.9048255+09:00",
     "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\ユーザー情報ビュー.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
@@ -97,29 +78,11 @@
   },
   {
     "ModuleName": "TableView/ymia_v_mhinban_lastest",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-20T18:48:30.904754+09:00",
-    "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\Remacs\\ymia_v_mhinban_lastest.json"
-    ]
+    "ModuleType": 23
   },
   {
     "ModuleName": "TableView/ymia_v_hinban_leadtime",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-20T18:48:30.9047863+09:00",
-    "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\Remacs\\ymia_v_hinban_leadtime.json"
-    ]
+    "ModuleType": 23
   },
   {
     "ModuleName": "Pages/ビルトイン ページ",
@@ -243,17 +206,7 @@
   },
   {
     "ModuleName": "PCPage/OPカード印刷",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-20T18:31:47.3542594+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\OPカード印刷.json",
-      "Pages\\OPカード印刷.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "Pages/不要画面",
@@ -425,15 +378,6 @@
   },
   {
     "ModuleName": "TableView/ymia_v_thatchum",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-20T18:48:30.904802+09:00",
-    "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\Remacs\\ymia_v_thatchum.json"
-    ]
+    "ModuleType": 23
   }
 ]

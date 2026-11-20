@@ -195,7 +195,7 @@
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
       "DefaultValue": {
         "$type": "Forguncy.DateObject, ServerDesignerCommon",
-        "Value": "2026-11-20T15:33:17.357"
+        "Value": "2026-11-20T18:48:39.473"
       },
       "DatabaseColumnType": "datetime",
       "MaxLength": -1,
