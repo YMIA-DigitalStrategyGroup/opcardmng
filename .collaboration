@@ -82,16 +82,7 @@
   },
   {
     "ModuleName": "TableView/ymia_v_hinban_leadtime",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-20T17:19:45.3117163+09:00",
-    "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\Remacs\\ymia_v_hinban_leadtime.json"
-    ]
+    "ModuleType": 23
   },
   {
     "ModuleName": "Pages/ビルトイン ページ",
@@ -215,17 +206,7 @@
   },
   {
     "ModuleName": "PCPage/OPカード印刷",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-20T17:20:31.8212377+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\OPカード印刷.json",
-      "Pages\\OPカード印刷.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "Pages/不要画面",

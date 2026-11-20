@@ -20,6 +20,29 @@
     },
     {
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "bigint",
+      "MaxLength": -1,
+      "Name": "リードタイム",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DefaultValue": 0.0000,
+      "Required": true,
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "ロット数",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "bigint",
+      "MaxLength": -1,
+      "Name": "品番内リードタイム",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
       "DatabaseColumnType": "int",
       "MaxLength": -1,
       "Name": "工程パターンNo",
@@ -89,7 +112,7 @@
     "ConnectionId": "MySql1",
     "SourceTableName": "ymia_v_hinban_leadtime",
     "SourceTableSchema": "",
-    "CreateViewSql": "select `h`.`HINBAN` AS `品番`,`h`.`HINMEI` AS `品名`,`h`.`KOTEI_PATTERN_NBR` AS `工程パターンNo`,`km`.`KOTEI_JUN` AS `工程順`,`km`.`KOTEI_CODE` AS `工程コード`,`kn`.`KOTEI_NAME` AS `工程名`,`km`.`LEAD_TIME` AS `工程個別リードタイム`,`kn`.`LEAD_TIME` AS `工程デフォルトリードタイム`,`t`.`KIGYO_CODE` AS `企業コード`,`t`.`TORIHIKISAKI_CODE` AS `取引先コード`,`t`.`TANKA` AS `単価` from (((`mhinban` `h` join `mkoteim` `km` on((`h`.`KOTEI_PATTERN_NBR` = `km`.`KOTEI_PATTERN_NBR`))) join `mkoteiname` `kn` on((`km`.`KOTEI_CODE` = `kn`.`KOTEI_CODE`))) left join (select `m`.`HINBAN` AS `HINBAN`,`m`.`KIGYO_CODE` AS `KIGYO_CODE`,`m`.`TORIHIKISAKI_CODE` AS `TORIHIKISAKI_CODE`,`md`.`TANKA` AS `TANKA` from (`mtanka` `m` left join `mtankam` `md` on((`m`.`TANKA_SEQ` = `md`.`TANKA_SEQ`))) where ((`m`.`TANKA_SEQ` = (select min(`m2`.`TANKA_SEQ`) from `mtanka` `m2` where (`m2`.`HINBAN` = `m`.`HINBAN`))) and (`md`.`QUANTITY` = (select min(`md2`.`QUANTITY`) from `mtankam` `md2` where (`md2`.`TANKA_SEQ` = `m`.`TANKA_SEQ`))))) `t` on((`h`.`HINBAN` = `t`.`HINBAN`))) where (`h`.`KAITEI_SEQ_NBR` = (select max(`h2`.`KAITEI_SEQ_NBR`) from `mhinban` `h2` where (`h2`.`HINBAN` = `h`.`HINBAN`)))",
+    "CreateViewSql": "select `h`.`HINBAN` AS `品番`,`h`.`HINMEI` AS `品名`,`h`.`HONTAI_KAKAKU` AS `リードタイム`,coalesce(`l`.`LOT_QUANTITY`,1) AS `ロット数`,`h`.`HONTAI_KAKAKU` AS `品番内リードタイム`,`h`.`KOTEI_PATTERN_NBR` AS `工程パターンNo`,`km`.`KOTEI_JUN` AS `工程順`,`km`.`KOTEI_CODE` AS `工程コード`,`kn`.`KOTEI_NAME` AS `工程名`,`km`.`LEAD_TIME` AS `工程個別リードタイム`,`kn`.`LEAD_TIME` AS `工程デフォルトリードタイム`,`t`.`KIGYO_CODE` AS `企業コード`,`t`.`TORIHIKISAKI_CODE` AS `取引先コード`,`t`.`TANKA` AS `単価` from ((((`vw_mhinban` `h` join `mkoteim` `km` on((`h`.`KOTEI_PATTERN_NBR` = `km`.`KOTEI_PATTERN_NBR`))) join `mkoteiname` `kn` on((`km`.`KOTEI_CODE` = `kn`.`KOTEI_CODE`))) left join `mlot` `l` on((`h`.`HINBAN` = `l`.`HINBAN`))) left join (select `m`.`HINBAN` AS `HINBAN`,`m`.`KIGYO_CODE` AS `KIGYO_CODE`,`m`.`TORIHIKISAKI_CODE` AS `TORIHIKISAKI_CODE`,`md`.`TANKA` AS `TANKA` from (`mtanka` `m` left join `mtankam` `md` on((`m`.`TANKA_SEQ` = `md`.`TANKA_SEQ`))) where ((`m`.`TANKA_SEQ` = (select min(`m2`.`TANKA_SEQ`) from `mtanka` `m2` where (`m2`.`HINBAN` = `m`.`HINBAN`))) and (`md`.`QUANTITY` = (select min(`md2`.`QUANTITY`) from `mtankam` `md2` where (`md2`.`TANKA_SEQ` = `m`.`TANKA_SEQ`))))) `t` on((`h`.`HINBAN` = `t`.`HINBAN`)))",
     "ViewInfo": {
       "ViewName": "ymia_v_hinban_leadtime",
       "IsUpdatable": true,
