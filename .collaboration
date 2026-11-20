@@ -9,7 +9,16 @@
   },
   {
     "ModuleName": "Table/ymia_t_opcard_hachu",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-11-20T18:48:30.9044119+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\SQLServer\\ymia_t_opcard_hachu.json"
+    ]
   },
   {
     "ModuleName": "Table/ymia_t_opcard_chuzan",
@@ -57,7 +66,17 @@
   },
   {
     "ModuleName": "TableView/ユーザー情報ビュー",
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-11-20T18:48:30.9048255+09:00",
     "ModuleType": 23,
+    "ToRemoveFiles": [
+      "Tables\\ユーザー情報ビュー.json",
+      "ForguncyDB.sqlite3"
+    ],
     "ExclusiveType": 0
   },
   {
@@ -78,11 +97,29 @@
   },
   {
     "ModuleName": "TableView/ymia_v_mhinban_lastest",
-    "ModuleType": 23
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-11-20T18:48:30.904754+09:00",
+    "ModuleType": 23,
+    "ToRemoveFiles": [
+      "Tables\\Remacs\\ymia_v_mhinban_lastest.json"
+    ]
   },
   {
     "ModuleName": "TableView/ymia_v_hinban_leadtime",
-    "ModuleType": 23
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-11-20T18:48:30.9047863+09:00",
+    "ModuleType": 23,
+    "ToRemoveFiles": [
+      "Tables\\Remacs\\ymia_v_hinban_leadtime.json"
+    ]
   },
   {
     "ModuleName": "Pages/ビルトイン ページ",
@@ -388,6 +425,15 @@
   },
   {
     "ModuleName": "TableView/ymia_v_thatchum",
-    "ModuleType": 23
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-11-20T18:48:30.904802+09:00",
+    "ModuleType": 23,
+    "ToRemoveFiles": [
+      "Tables\\Remacs\\ymia_v_thatchum.json"
+    ]
   }
 ]
