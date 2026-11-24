@@ -501,16 +501,6 @@
     "ModuleType": 19
   },
   {
-    "ModuleName": "PageReport/P番伝票(仕組)",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-24T09:32:13.2193512+09:00",
-    "ModuleType": 17
-  },
-  {
     "ModuleName": "PageReport/P番伝票(仕組)_修正版",
     "State": 3,
     "LockedBy": {
