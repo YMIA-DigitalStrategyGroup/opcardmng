@@ -9,7 +9,16 @@
   },
   {
     "ModuleName": "Table/ymia_t_opcard_hachu",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\999D4610",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-11-24T17:08:36.3169949+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\SQLServer\\ymia_t_opcard_hachu.json"
+    ]
   },
   {
     "ModuleName": "Table/ymia_t_opcard_chuzan",
@@ -88,11 +97,29 @@
   },
   {
     "ModuleName": "TableView/ymia_v_mhinban_lastest",
-    "ModuleType": 23
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\999D4610",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-11-24T17:08:36.3171395+09:00",
+    "ModuleType": 23,
+    "ToRemoveFiles": [
+      "Tables\\Remacs\\ymia_v_mhinban_lastest.json"
+    ]
   },
   {
     "ModuleName": "TableView/ymia_v_hinban_leadtime",
-    "ModuleType": 23
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\999D4610",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-11-24T17:08:36.3171525+09:00",
+    "ModuleType": 23,
+    "ToRemoveFiles": [
+      "Tables\\Remacs\\ymia_v_hinban_leadtime.json"
+    ]
   },
   {
     "ModuleName": "Pages/ビルトイン ページ",
@@ -398,7 +425,16 @@
   },
   {
     "ModuleName": "TableView/ymia_v_thatchum",
-    "ModuleType": 23
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\999D4610",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-11-24T17:08:36.3171663+09:00",
+    "ModuleType": 23,
+    "ToRemoveFiles": [
+      "Tables\\Remacs\\ymia_v_thatchum.json"
+    ]
   },
   {
     "ModuleName": "PCPage/P番部品構成情報",
