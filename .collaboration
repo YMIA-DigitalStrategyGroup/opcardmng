@@ -471,16 +471,6 @@
     "ModuleType": 15
   },
   {
-    "ModuleName": "ServerCommands/インポートフォルダー1",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-24T09:25:02.9728572+09:00",
-    "ModuleType": 20
-  },
-  {
     "ModuleName": "PageReport/P番伝票(単品)",
     "State": 3,
     "LockedBy": {
