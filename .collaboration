@@ -509,5 +509,35 @@
     },
     "LockDateTime": "2026-11-24T09:32:13.2193584+09:00",
     "ModuleType": 17
+  },
+  {
+    "ModuleName": "PCPage/材料売上伝票一覧_新",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\999D4610",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-11-24T11:43:30.9937923+09:00",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/インポートフォルダー1",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\999D4610",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-11-24T11:43:30.993835+09:00",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "Pages/インポートフォルダー1/材料売上伝票",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\999D4610",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-11-24T11:43:30.9944462+09:00",
+    "ModuleType": 6
   }
 ]
