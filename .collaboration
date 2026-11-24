@@ -401,16 +401,6 @@
     "ModuleType": 1
   },
   {
-    "ModuleName": "Pages/インポートフォルダー1",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-24T09:25:02.9708043+09:00",
-    "ModuleType": 6
-  },
-  {
     "ModuleName": "Pages/P番号部品構成情報",
     "State": 3,
     "LockedBy": {
