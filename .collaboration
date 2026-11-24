@@ -481,16 +481,6 @@
     "ModuleType": 17
   },
   {
-    "ModuleName": "Reports/インポートフォルダー1",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-24T09:25:02.9733497+09:00",
-    "ModuleType": 19
-  },
-  {
     "ModuleName": "Reports/材料売上伝票",
     "State": 3,
     "LockedBy": {
