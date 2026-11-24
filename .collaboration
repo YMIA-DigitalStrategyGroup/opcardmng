@@ -477,7 +477,7 @@
       "UserName": "UNITY\\999D4610",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-11-24T09:25:02.9733438+09:00",
+    "LockDateTime": "2026-11-24T09:32:13.2193428+09:00",
     "ModuleType": 17
   },
   {
@@ -491,13 +491,13 @@
     "ModuleType": 19
   },
   {
-    "ModuleName": "Reports/インポートフォルダー1/材料売上伝票",
+    "ModuleName": "Reports/材料売上伝票",
     "State": 3,
     "LockedBy": {
       "UserName": "UNITY\\999D4610",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-11-24T09:25:02.9733567+09:00",
+    "LockDateTime": "2026-11-24T09:32:13.2193733+09:00",
     "ModuleType": 19
   },
   {
@@ -507,7 +507,7 @@
       "UserName": "UNITY\\999D4610",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-11-24T09:25:02.9733733+09:00",
+    "LockDateTime": "2026-11-24T09:32:13.2193512+09:00",
     "ModuleType": 17
   },
   {
@@ -517,7 +517,7 @@
       "UserName": "UNITY\\999D4610",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-11-24T09:25:02.973376+09:00",
+    "LockDateTime": "2026-11-24T09:32:13.2193584+09:00",
     "ModuleType": 17
   }
 ]
