@@ -605,15 +605,5 @@
     },
     "LockDateTime": "2026-11-27T13:24:47.9649733+09:00",
     "ModuleType": 23
-  },
-  {
-    "ModuleName": "PageReport/test",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-27T14:46:01.7377455+09:00",
-    "ModuleType": 17
   }
 ]
