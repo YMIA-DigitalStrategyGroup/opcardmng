@@ -1,0 +1,226 @@
+{
+  "Name": "ymia_v_tjuchum",
+  "Columns": [
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "受注No（工事№）",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "明細No",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 30,
+      "Name": "注文番号",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 8,
+      "Name": "売上先コード",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "longtext",
+      "MaxLength": 16777216,
+      "Name": "売上先名称",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "longtext",
+      "MaxLength": 16777216,
+      "Name": "売上先郵便番号",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "longtext",
+      "MaxLength": 16777216,
+      "Name": "売上先住所",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 50,
+      "Name": "納入先コード",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "longtext",
+      "MaxLength": 16777216,
+      "Name": "納入先名称",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "longtext",
+      "MaxLength": 16777216,
+      "Name": "納入先郵便番号",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "longtext",
+      "MaxLength": 16777216,
+      "Name": "納入先住所",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "longtext",
+      "MaxLength": 16777216,
+      "Name": "納入先電話番号",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "longtext",
+      "MaxLength": 16777216,
+      "Name": "受注物件名",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "date",
+      "MaxLength": -1,
+      "Name": "受注日",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "date",
+      "MaxLength": -1,
+      "Name": "出荷予定日",
+      "ColumnType": "System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 10,
+      "Name": "ヘッダー製番（機械工番）",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 15,
+      "Name": "手配工番",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 20,
+      "Name": "品番（部品コード）",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "分類区分",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "数量",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "販売単価",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "販売金額",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 30,
+      "Name": "明細製番",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "longtext",
+      "MaxLength": 16777216,
+      "Name": "部品名称",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 50,
+      "Name": "規格・寸法",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 20,
+      "Name": "ロケーション（棚番）",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "最新改訂通番",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 50,
+      "Name": "単位名称",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "bigint",
+      "MaxLength": -1,
+      "Name": "伝票番号",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "DataBaseType": "6db454c0-531c-4395-9122-921a18942902",
+    "ConnectionId": "MySql1",
+    "SourceTableName": "ymia_v_tjuchum",
+    "SourceTableSchema": "",
+    "CreateViewSql": "select `t_juchu`.`JUCHU_NBR` AS `受注No（工事№）`,`t_juchum`.`MEISAI_NBR` AS `明細No`,`t_juchu`.`CHUMONSHO_NBR` AS `注文番号`,`t_juchu`.`TORIHIKISAKI_CODE` AS `売上先コード`,trim(regexp_replace(replace(`m_torihiki`.`TORIHIKISAKI_NAME`,'　',' '),' +',' ')) AS `売上先名称`,trim(regexp_replace(replace(`m_torihiki`.`POST_CODE`,'　',' '),' +',' ')) AS `売上先郵便番号`,trim(regexp_replace(replace(`m_torihiki`.`ADDRESS`,'　',' '),' +',' ')) AS `売上先住所`,`t_juchu`.`NONYUSAKI` AS `納入先コード`,trim(regexp_replace(replace(`m_nonyusaki`.`TORIHIKISAKI_NAME`,'　',' '),' +',' ')) AS `納入先名称`,trim(regexp_replace(replace(`m_nonyusaki`.`POST_CODE`,'　',' '),' +',' ')) AS `納入先郵便番号`,trim(regexp_replace(replace(`m_nonyusaki`.`ADDRESS`,'　',' '),' +',' ')) AS `納入先住所`,trim(regexp_replace(replace(`m_nonyusaki`.`PHONE_NBR1`,'　',' '),' +',' ')) AS `納入先電話番号`,trim(regexp_replace(replace(`t_juchu`.`TANPIN_IRAI_BUKKEN_NAME`,'　',' '),' +',' ')) AS `受注物件名`,`t_juchu`.`IRAI_DATE` AS `受注日`,`t_juchu`.`KOJO_SHUKKA_YOTEI_DATE` AS `出荷予定日`,`t_juchu`.`SEIBAN` AS `ヘッダー製番（機械工番）`,`t_juchu`.`TEHAI_KOBAN` AS `手配工番`,`t_juchum`.`HINBAN` AS `品番（部品コード）`,`t_juchum`.`BUNRUI_KUBUN` AS `分類区分`,`t_juchum`.`SURYO` AS `数量`,`t_juchum`.`HANBAI_TANKA` AS `販売単価`,`t_juchum`.`HANBAI_KINGAKU` AS `販売金額`,`t_juchum`.`SEIBAN` AS `明細製番`,trim(regexp_replace(replace(`m_hinban`.`HINMEI`,'　',' '),' +',' ')) AS `部品名称`,`m_hinban`.`KIKAKU` AS `規格・寸法`,`m_hinban`.`TANABAN` AS `ロケーション（棚番）`,`m_hinban`.`KAITEI_SEQ_NBR` AS `最新改訂通番`,`m_name`.`MEISHO` AS `単位名称`,`m_hatchu`.`DENPYO_NBR` AS `伝票番号` from ((((((`tjuchu` `t_juchu` join `tjuchum` `t_juchum` on((`t_juchu`.`JUCHU_NBR` = `t_juchum`.`JUCHU_NBR`))) left join `mtorihiki` `m_torihiki` on(((`t_juchu`.`KIGYO_CODE` = `m_torihiki`.`KIGYO_CODE`) and (`t_juchu`.`TORIHIKISAKI_CODE` = `m_torihiki`.`TORIHIKISAKI_CODE`) and (ifnull(`m_torihiki`.`DELETE_FLG`,0) = 0)))) left join `mtorihiki` `m_nonyusaki` on(((`t_juchu`.`NONYUSAKI` = `m_nonyusaki`.`TORIHIKISAKI_CODE`) and (ifnull(`m_nonyusaki`.`DELETE_FLG`,0) = 0)))) left join `vw_mhinban` `m_hinban` on((`t_juchum`.`HINBAN` = `m_hinban`.`HINBAN`))) left join `mname` `m_name` on(((`m_hinban`.`TANI_CODE` = `m_name`.`MEISHO_CODE`) and (`m_name`.`MEISHO_KUBUN` = 48)))) left join (select `thatchum`.`SEIBAN` AS `SEIBAN`,`thatchum`.`HINBAN` AS `HINBAN`,max(`thatchum`.`DENPYO_NBR`) AS `DENPYO_NBR` from `thatchum` group by `thatchum`.`SEIBAN`,`thatchum`.`HINBAN`) `m_hatchu` on(((`t_juchu`.`TEHAI_KOBAN` = `m_hatchu`.`SEIBAN`) and (`t_juchum`.`HINBAN` = `m_hatchu`.`HINBAN`)))) where (`t_juchu`.`TEHAI_KOBAN` like 'P%')",
+    "ViewInfo": {
+      "ViewName": "ymia_v_tjuchum",
+      "IsUpdatable": true,
+      "QueryColumns": []
+    }
+  },
+  "Indexes": []
+}

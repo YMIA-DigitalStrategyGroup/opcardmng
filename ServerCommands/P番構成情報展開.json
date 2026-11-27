@@ -1,0 +1,75 @@
+{
+  "Name": "P番構成情報展開",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.PostRequestTriggerSaveData, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_LoginUser"
+              ]
+            }
+          ]
+        }
+      },
+      "Parameters": [
+        {
+          "Name": "担当者",
+          "DataValidationInfo": {}
+        },
+        {
+          "Name": "対象品番",
+          "DataValidationInfo": {}
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "MySql1",
+      "Params": {
+        "担当者": {
+          "Item1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=担当者"
+          },
+          "Item2": 253
+        }
+      },
+      "SqlStatement": "DELETE from `ymia_t_pban_kaiso` where `担当者`=?担当者",
+      "ID": "232eee56577a4243b572aa5fbcc46b74",
+      "Comments": "該当テーブルをいったん削除"
+    },
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "MySql1",
+      "Params": {
+        "担当者": {
+          "Item1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=担当者"
+          },
+          "Item2": 253
+        },
+        "対象品番": {
+          "Item1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=対象品番"
+          },
+          "Item2": 253
+        }
+      },
+      "SqlStatement": "insert into ymia_t_pban_kaiso \r\nWITH RECURSIVE bom_tree AS (\r\n    -- ① 起点：指定品番をセット＋1階層目の自分自身チェック\r\n    SELECT \r\n        1 AS level,\r\n        km.HINBAN AS parent_hinban,\r\n        km.KO_HINBAN AS child_hinban,\r\n        km.SURYO AS qty,\r\n        km.SURYO AS total_qty,\r\n        CAST(CONCAT('/', km.HINBAN, '/', km.KO_HINBAN, '/') AS CHAR(2000)) AS path,\r\n        CASE WHEN km.HINBAN = km.KO_HINBAN THEN 1 ELSE 0 END AS is_cycle\r\n    FROM mkoseim km\r\n    WHERE km.HINBAN = ?対象品番  -- ★指定品番\r\n\r\n    UNION ALL\r\n\r\n    -- ② 再帰部：循環チェック＋階層制限\r\n    SELECT \r\n        bt.level + 1 AS level,\r\n        km.HINBAN AS parent_hinban,\r\n        km.KO_HINBAN AS child_hinban,\r\n        km.SURYO AS qty,\r\n        bt.total_qty * km.SURYO AS total_qty,\r\n        CONCAT(bt.path, km.KO_HINBAN, '/'),\r\n        CASE \r\n            WHEN km.HINBAN = km.KO_HINBAN THEN 1\r\n            WHEN INSTR(bt.path, CONCAT('/', km.KO_HINBAN, '/')) > 0 THEN 1 \r\n            ELSE 0 \r\n        END AS is_cycle\r\n    FROM mkoseim km\r\n    INNER JOIN bom_tree bt ON km.HINBAN = bt.child_hinban\r\n    WHERE bt.is_cycle = 0 AND bt.level < 20\r\n)\r\nSELECT \r\n    ?担当者            AS `担当者`,             -- ★担当者名（定数文字）\r\n    bt.level               AS `階層`,\r\n    bt.parent_hinban      AS `親品番`,\r\n    bt.child_hinban       AS `子品番`,\r\n    mh.HINMEI             AS `子品名`,\r\n    mh.ZAIKO_KANRI_KUBUN  AS `在庫管理区分`,       -- ★在庫管理区分\r\n    bt.qty                AS `構成数`,\r\n    bt.total_qty          AS `累計必要数`,\r\n    \r\n    -- ★備考(BIKO)の [LT:xx] から数値だけを安全に抽出\r\n    CAST(\r\n        SUBSTRING_INDEX(SUBSTRING_INDEX(mh.BIKO, '[LT:', -1), ']', 1) AS UNSIGNED\r\n    )                      AS `リードタイム`,\r\n    \r\n    bt.path               AS `展開パス`\r\nFROM bom_tree bt\r\nLEFT JOIN mhinban mh ON bt.child_hinban = mh.HINBAN \r\n                    AND mh.KAITEI_SEQ_NBR = (\r\n                        SELECT MAX(sub.KAITEI_SEQ_NBR) \r\n                        FROM mhinban sub \r\n                        WHERE sub.HINBAN = bt.child_hinban\r\n                    )\r\nWHERE bt.is_cycle = 0\r\nORDER BY bt.level, bt.child_hinban",
+      "ID": "37b5b78c84144156b056ca780a7f7ab3"
+    }
+  ]
+}

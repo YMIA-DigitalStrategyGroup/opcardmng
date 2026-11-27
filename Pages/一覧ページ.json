@@ -390,7 +390,7 @@
                     "ID": "0cdfff97f73249c8851a4c7ce7d5fc35"
                   }
                 ],
-                "ID": "6e824b4b-aadd-4455-9dc7-3543e2496f5c"
+                "ID": "417bfb6d-27e3-4c1c-bcf3-cd6b00ec0847"
               },
               {
                 "CommandList": [
@@ -456,7 +456,7 @@
                     "ID": "be37499c84b645de9a6e6f36472a01e1"
                   }
                 ],
-                "ID": "95149e51-dc08-4eec-8a24-f97f90e702c4"
+                "ID": "f797a45b-22a6-4e4e-9712-324e0ff31159"
               }
             ]
           }
@@ -516,7 +516,7 @@
                     "MessageFormula": "データを更新しました！！"
                   }
                 ],
-                "ID": "4da52b34-f1a3-417d-9aee-0563ab4c5a59"
+                "ID": "999e4752-8a6a-4041-bf91-7b9b6239231e"
               }
             ]
           }
@@ -718,7 +718,7 @@
                       }
                     ],
                     "Comments": "注文番号が無い場合",
-                    "ID": "2e096d0a-6bf8-4290-b0bd-b49f248b46a8"
+                    "ID": "a862120a-e36f-4644-a9e4-a1b76f3b7230"
                   }
                 ]
               }
@@ -846,11 +846,16 @@
           {
             "Value": "処理済",
             "DisplayValue": "処理済"
+          },
+          {
+            "Value": "納入待ち",
+            "DisplayValue": "納入待ち"
           }
         ]
       },
       "RulesGuidList": [
-        "43c6a0bc-5b1d-4ec7-8fe4-704cd1017d81"
+        "43c6a0bc-5b1d-4ec7-8fe4-704cd1017d81",
+        "1f7d7e99-b9d9-4225-9f19-950f82375aec"
       ]
     },
     "11,13": {
@@ -961,7 +966,7 @@
       "BindingInfo": {
         "TableName": "ymia_t_opcard_hachu",
         "ColumnName": "仕入先コード",
-        "GUID": "d870f006-83ee-4ad3-8c68-6eb99882762f"
+        "GUID": "4e490e2b-b0b2-4682-9749-98e42acfdf91"
       },
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
@@ -1036,7 +1041,7 @@
       "BindingInfo": {
         "TableName": "ymia_t_opcard_hachu",
         "ColumnName": "仕入先名称",
-        "GUID": "240c1642-c290-4c95-b292-650dd7d910b2"
+        "GUID": "19991aaf-8023-4e3f-aa00-a37837d4135d"
       },
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
@@ -1098,7 +1103,7 @@
       "BindingInfo": {
         "TableName": "ymia_t_opcard_hachu",
         "ColumnName": "購買担当",
-        "GUID": "2dff3a61-8853-47dc-a691-029e7c7f09f5"
+        "GUID": "0f411813-6b17-4210-8ad6-6290328b5113"
       },
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
@@ -1226,7 +1231,7 @@
                     "MessageFormula": "データを更新しました！"
                   }
                 ],
-                "ID": "f043ea49-1d36-4425-8d52-05ec39dabc3b"
+                "ID": "6b053081-dd52-40bc-9814-a651179aeb8a"
               }
             ]
           }
@@ -1501,7 +1506,7 @@
                     "Disabled": true
                   }
                 ],
-                "ID": "6357bc8b-91de-42e2-add8-b5a4ffaaa838"
+                "ID": "5dc0e09b-8a9d-46f9-8a12-c6f8ad98c554"
               }
             ]
           }
@@ -1554,7 +1559,7 @@
                     ]
                   }
                 ],
-                "ID": "1caf5a82-f0b0-41b8-81f4-3ddc8af17344"
+                "ID": "c29b2b17-b89f-4782-9b19-d6bb46c0b5b3"
               }
             ]
           }
@@ -1607,7 +1612,7 @@
                     ]
                   }
                 ],
-                "ID": "8e2e2ed8-142b-44d0-95c0-b565b52ccd1d"
+                "ID": "2167d201-1100-4adb-a830-2dcd465d0c6a"
               }
             ]
           }
@@ -2316,6 +2321,27 @@
       "Rules": [
         {
           "$type": "Forguncy.ConditionFormat.SpecificTextRule, ServerDesignerCommon",
+          "Value": "納入待ち",
+          "Priority": 5,
+          "GUID": "1f7d7e99-b9d9-4225-9f19-950f82375aec",
+          "StyleInfo": {
+            "Background": "#FFFFEC4E",
+            "Underline": null,
+            "Strikethrough": null
+          }
+        },
+        {
+          "$type": "Forguncy.ConditionFormat.SpecificTextRule, ServerDesignerCommon",
+          "Value": "未処理",
+          "Priority": 4,
+          "GUID": "43c6a0bc-5b1d-4ec7-8fe4-704cd1017d81",
+          "StyleInfo": {
+            "Background": "#FFFFB6C1",
+            "Foreground": "#FF8B0000"
+          }
+        },
+        {
+          "$type": "Forguncy.ConditionFormat.SpecificTextRule, ServerDesignerCommon",
           "Value": "1",
           "Priority": 3,
           "GUID": "d63a730e-2b1a-44bf-8d0d-d95170cf4f7a",
@@ -2355,16 +2381,6 @@
             "Underline": null,
             "Strikethrough": null
           }
-        },
-        {
-          "$type": "Forguncy.ConditionFormat.SpecificTextRule, ServerDesignerCommon",
-          "Value": "未処理",
-          "Priority": 4,
-          "GUID": "43c6a0bc-5b1d-4ec7-8fe4-704cd1017d81",
-          "StyleInfo": {
-            "Background": "#FFFFB6C1",
-            "Foreground": "#FF8B0000"
-          }
         }
       ]
     }
@@ -2373,4 +2389,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//6YUmDm6BDtoNavesEbh72+Xn+54v7Fl87tOuZ7sbrdASr14M9lTdcyS8kiLX3ebrsVN4Nu2KRMWUZgld/9xuy76iiy85eIRYrIbWvf0MMvnPGTibP7+QDX+FdqEm4tEJmE8Fq1zY7TU56AuYnss/OZqtqvVVdeYcJpw/TquJRCzeuA13Pz108sSQhIwaWvEb+Qi7uLOv5jIPyF6jsD3fQfj/iXFz77zVvxrEfPymVabFBOBZOjhk60wP2Pj5csP6/HYWAdD8VKMraVwY3OZN0de/Owt3u6Tagur8MKzOY4DopdIhztqAYEwAJE8EoPf0Cbk9DItyaYkZpkIQ8AwaebjWV13YDL5JFIIn5ik52RpQTn59bIhI/tzzUxnUQrCuzDTT2+wv7vo7wgmhLFiqQxUzhAUK2C1IVwfY9Vc2auZQtZXHmri0lkJG+htFdCIQ2x/X99hJhygwreUFlQzMGD9eaHSYLVZbrbb4k2zkdTobq3AtKQ3w+bm3LnTN8quILi/A+AVy7BNDU4a8ynyC2H+2sqlQ07G9ikY6uAkFUlkoVWtJmqWDiCGaZnj3hnUqEwIx/J8mtcMuOYwaGlIBdooVbJW98Fv9hXVKo24SwdxnNzs8gobzVZ25sXIl3mS3H3D4oF49qku2bNWcBspLJYPp+cIu1rEqCHYhFwRsdPTb1Wwgrqai+jgWxspCrZrZyZWXDPGS2IEE0ucXr3yKKTetBs0pobznj0EUDZ+twAdsAu2mAtwq41H+o16binW//48mOi9SwJSkmCelT7aBa3pmLCdfeV4Kszst1dEFtOS0Po/GdoXK90/YEY1WKjOZDs6zzihmvWrJUSew3OhEAtH0ScFkZZ147egC3p6WyFYLCDsS1aDy2fJ+uG18d485vuN3r5RcTNPQe2CWIUEq+A==|920
+}///tbfH3wML3B3AQMQEGm3eLw2QZ/d+w07rjv3UDUs4GABL/7kfOuZD/B6WAovslNBpeALzN/Rk40Y/hTYzUbdBDnG2tW01z8I9cteK63oFimvTAHGpwKI+BCu0jOtzkZ95vQrmg6R16MqNeQjJzVd/qcfFVwAWv17q3s6SEx990nDmGHbDQXgjsldiPA3h0tGdfS1u/3WVVZiSQyaVGRSXRmJXQF7tgD06pB1v4c4yQv90C2rzu8fysejsxbZheZYNx3tvA+HIkFhDkcWjWfME7yImTwFZZlT1NrgaIEvBiJPXZIDtGvlFecOSpzHH1vjVcNSvMw/HsYFJt9NilvsSMyUzg5u9qwQNeFvfS0WslXYoaozJPLEnUnVLIqX2h6Y4kIOqys7JDIdRthTV0OuWtoqs/GvOCB7VJObkWuG/DNk42dkuM40bppnr6oeRkX5E+Q73mVw0NorvuPakc4ZmiwlWkCs57T5qSK9T9S0gb9wFjfBlUtvRyB1r9T7A6O1UTUZUnGaw+nwHPAo5CxNg6IUBdzXk+eMG97BnSzw57vI1i6nZnjASRky1xWUxpHzrpQmqehH6ISn2DMO8DmphN/KBCptRoLLrJg2NriTHdLJq6ae7zhYPllT/7JQ7iq2rv1DnzeYi2bqu7fYlWFQiwDU9z6tOOWue011ZIIXu2v0N5V4iK3YP3Y/bYoKZ9H0Haw93j5C6s/467BuyIEttAQFvg4e7Fq5L08X7QN+H+2ssiOQfXmpvKNG4Y+k+/6Af9YoF4lQOpabjh0FYhcYiK3Bam4ZHPvwN99oT9ob6ude3S2xuSlwOnemqHcIlbEojOFhqu9ShEAh4tGu/3XZOivU0mdOpWpjMgKFGKPX+Uxn9ScQW2pZYSuNSVt2sewG967181xT+QFpklqkjZGFVA==|920

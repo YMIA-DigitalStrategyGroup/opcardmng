@@ -9,16 +9,7 @@
   },
   {
     "ModuleName": "Table/ymia_t_opcard_hachu",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-24T17:08:36.3169949+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\SQLServer\\ymia_t_opcard_hachu.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/ymia_t_opcard_chuzan",
@@ -66,17 +57,7 @@
   },
   {
     "ModuleName": "TableView/ユーザー情報ビュー",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-24T09:25:02.9722041+09:00",
     "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\ユーザー情報ビュー.json",
-      "ForguncyDB.sqlite3"
-    ],
     "ExclusiveType": 0
   },
   {
@@ -97,29 +78,11 @@
   },
   {
     "ModuleName": "TableView/ymia_v_mhinban_lastest",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-24T17:08:36.3171395+09:00",
-    "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\Remacs\\ymia_v_mhinban_lastest.json"
-    ]
+    "ModuleType": 23
   },
   {
     "ModuleName": "TableView/ymia_v_hinban_leadtime",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-24T17:08:36.3171525+09:00",
-    "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\Remacs\\ymia_v_hinban_leadtime.json"
-    ]
+    "ModuleType": 23
   },
   {
     "ModuleName": "Pages/ビルトイン ページ",
@@ -227,17 +190,7 @@
   },
   {
     "ModuleName": "PCPage/一覧ページ",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-25T11:14:26.3813305+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\一覧ページ.json",
-      "Pages\\一覧ページ.rd"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/発注時コメントマスタメンテ",
@@ -309,17 +262,7 @@
   },
   {
     "ModuleName": "MasterPCPage/発注管理画面",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-24T09:42:05.6270344+09:00",
-    "ModuleType": 3,
-    "ToRemoveFiles": [
-      "MasterPages\\発注管理画面.json",
-      "MasterPages\\発注管理画面.rd"
-    ]
+    "ModuleType": 3
   },
   {
     "ModuleName": "ServerCommand/PDFTEMP2PDF",
@@ -435,175 +378,70 @@
   },
   {
     "ModuleName": "TableView/ymia_v_thatchum",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-24T17:08:36.3171663+09:00",
-    "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\Remacs\\ymia_v_thatchum.json"
-    ]
+    "ModuleType": 23
   },
   {
     "ModuleName": "PCPage/P番部品構成情報",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-24T09:25:18.1877632+09:00",
     "ModuleType": 1
   },
   {
     "ModuleName": "Pages/P番号部品構成情報",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-24T09:25:18.1877849+09:00",
     "ModuleType": 6
   },
   {
     "ModuleName": "TableView/ymia_v_tjuchum",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-24T09:25:43.3182816+09:00",
     "ModuleType": 23
   },
   {
     "ModuleName": "Tables/材料売上伝票",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-24T09:25:43.318301+09:00",
     "ModuleType": 22
   },
   {
     "ModuleName": "Table/ymia_t_pban_kaiso",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-24T09:25:02.9721658+09:00",
     "ModuleType": 7
   },
   {
     "ModuleName": "TableView/ymia_v_pban_chumon",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-24T09:25:02.9721695+09:00",
     "ModuleType": 23
   },
   {
     "ModuleName": "ServerCommand/P番構成情報展開",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-24T09:25:02.9728499+09:00",
     "ModuleType": 15
   },
   {
     "ModuleName": "PageReport/P番伝票(単品)",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-24T09:32:13.2193428+09:00",
     "ModuleType": 17
   },
   {
     "ModuleName": "Reports/材料売上伝票",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-24T09:32:13.2193733+09:00",
     "ModuleType": 19
   },
   {
     "ModuleName": "PageReport/P番伝票(仕組)_修正版",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-24T09:32:13.2193584+09:00",
     "ModuleType": 17
   },
   {
     "ModuleName": "PCPage/材料売上伝票一覧_新",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-24T11:43:43.9844935+09:00",
     "ModuleType": 1
   },
   {
     "ModuleName": "Pages/材料売上伝票",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-24T11:43:43.9845282+09:00",
     "ModuleType": 6
   },
   {
     "ModuleName": "TableView/ymia_v_tjuchu",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-24T11:55:57.8261902+09:00",
     "ModuleType": 23
   },
   {
     "ModuleName": "TableView/ymia_v_pban_naisei",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-25T16:20:41.3064983+09:00",
     "ModuleType": 23
   },
   {
     "ModuleName": "TableView/ymia_v_pban_shikumi",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-26T16:34:44.2087043+09:00",
     "ModuleType": 23
   },
   {
     "ModuleName": "TableView/ymia_v_pban_shikumim",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-27T13:24:47.9649733+09:00",
     "ModuleType": 23
   }
 ]

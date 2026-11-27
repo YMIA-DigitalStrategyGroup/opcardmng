@@ -1,0 +1,177 @@
+{
+  "Name": "ymia_v_pban_chumon",
+  "Columns": [
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "受注No",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 8,
+      "Name": "売上先コード",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 30,
+      "Name": "注文番号",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 10,
+      "Name": "ヘッダー製番（機械工番）",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 15,
+      "Name": "手配工番",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 20,
+      "Name": "仕組部品コード",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "受注数量",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "受注単価",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 30,
+      "Name": "明細製番",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 20,
+      "Name": "子部品コード",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "構成数量",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 50,
+      "Name": "子部品名称",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 5,
+      "Name": "倉出工程",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 50,
+      "Name": "規格・寸法",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 255,
+      "Name": "PATH",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DefaultValue": 0,
+      "Required": true,
+      "DatabaseColumnType": "bigint",
+      "MaxLength": -1,
+      "Name": "階層",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 50,
+      "Name": "品名",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 50,
+      "Name": "仕様詳細",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "最新改訂通番",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 20,
+      "Name": "ロケーション",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 50,
+      "Name": "単位名称",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "bigint",
+      "MaxLength": -1,
+      "Name": "伝票番号",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "DataBaseType": "6db454c0-531c-4395-9122-921a18942902",
+    "ConnectionId": "MySql1",
+    "SourceTableName": "ymia_v_pban_chumon",
+    "SourceTableSchema": "",
+    "CreateViewSql": "select `t_juchu`.`JUCHU_NBR` AS `受注No`,`t_juchu`.`TORIHIKISAKI_CODE` AS `売上先コード`,`t_juchu`.`CHUMONSHO_NBR` AS `注文番号`,`t_juchu`.`SEIBAN` AS `ヘッダー製番（機械工番）`,`t_buhink`.`SEIBAN` AS `手配工番`,`t_juchum`.`HINBAN` AS `仕組部品コード`,`t_juchum`.`SURYO` AS `受注数量`,`t_juchum`.`HANBAI_TANKA` AS `受注単価`,`t_buhink`.`KOBAN` AS `明細製番`,`t_buhink`.`HINBAN` AS `子部品コード`,`t_buhink`.`SURYO` AS `構成数量`,`t_buhink`.`KOSEI_NAME` AS `子部品名称`,`t_buhink`.`KURADASHI_KOTEI` AS `倉出工程`,`t_buhink`.`KIKAKU` AS `規格・寸法`,`t_buhink`.`PATH` AS `PATH`,((length(`t_buhink`.`PATH`) - length(replace(`t_buhink`.`PATH`,'~',''))) - 1) AS `階層`,`m_hinban`.`HINMEI` AS `品名`,`m_hinban`.`KEISHIKI` AS `仕様詳細`,`m_hinban`.`KAITEI_SEQ_NBR` AS `最新改訂通番`,`m_hinban`.`TANABAN` AS `ロケーション`,`m_name`.`MEISHO` AS `単位名称`,`m_hatchu`.`DENPYO_NBR` AS `伝票番号` from (((((`tbuhink` `t_buhink` left join `tjuchu` `t_juchu` on(((`t_buhink`.`SEIBAN` = `t_juchu`.`TEHAI_KOBAN`) and (ifnull(`t_juchu`.`DELETE_FLG`,0) = 0)))) left join `tjuchum` `t_juchum` on(((`t_juchu`.`JUCHU_NBR` = `t_juchum`.`JUCHU_NBR`) and (`t_buhink`.`KOBAN` = `t_juchum`.`SEIBAN`)))) left join `mhinban` `m_hinban` on(((`t_buhink`.`HINBAN` = `m_hinban`.`HINBAN`) and (`m_hinban`.`KAITEI_SEQ_NBR` = (select max(`sub`.`KAITEI_SEQ_NBR`) from `mhinban` `sub` where (`sub`.`HINBAN` = `t_buhink`.`HINBAN`)))))) left join `mname` `m_name` on(((`m_hinban`.`TANI_CODE` = `m_name`.`MEISHO_CODE`) and (`m_name`.`MEISHO_KUBUN` = 48)))) left join (select `thatchum`.`SEIBAN` AS `SEIBAN`,`thatchum`.`HINBAN` AS `HINBAN`,max(`thatchum`.`DENPYO_NBR`) AS `DENPYO_NBR` from `thatchum` group by `thatchum`.`SEIBAN`,`thatchum`.`HINBAN`) `m_hatchu` on(((`t_buhink`.`SEIBAN` = `m_hatchu`.`SEIBAN`) and (`t_buhink`.`HINBAN` = `m_hatchu`.`HINBAN`)))) where ((`t_buhink`.`HINBAN` is not null) and (trim(`t_buhink`.`HINBAN`) <> '') and (`t_juchum`.`HINBAN` is not null) and (trim(`t_juchum`.`HINBAN`) <> ''))",
+    "ViewInfo": {
+      "ViewName": "ymia_v_pban_chumon",
+      "IsUpdatable": true,
+      "QueryColumns": []
+    }
+  },
+  "Indexes": []
+}

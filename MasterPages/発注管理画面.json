@@ -266,6 +266,59 @@
                 ]
               }
             ]
+          },
+          {
+            "Value": "材料売上伝票",
+            "Text": "材料売上伝票",
+            "IconPath": "Application/045_search_6.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ],
+            "SubItems": [
+              {
+                "Value": "P番構成情報",
+                "Text": "P番構成情報",
+                "IconPath": "Application/130_list_2.svg",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColor": "Accent 1",
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "P番部品構成情報",
+                    "DeleteCachedQuery": true
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              },
+              {
+                "Value": "P番伝票出力",
+                "Text": "P番伝票出力",
+                "IconPath": "File/358_pdf_file_1.svg",
+                "SelectedIconColor": "Background 1",
+                "SelectedIconColorUseItemColor": true,
+                "IconColorUseItemColor": true,
+                "IsOldMenuPath": false,
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "PageName": "材料売上伝票一覧_新",
+                    "DeleteCachedQuery": true
+                  }
+                ],
+                "CanVisitRoleList": [
+                  "FGC_Anonymous"
+                ]
+              }
+            ]
           }
         ],
         "Orientation": 0,
@@ -358,4 +411,4 @@
       "Size": "1900,100"
     }
   ]
-}//1nkHozY5iiWgjZL1bcWg1NdxLaILmEubtsE3qSblL5uINR4OeVa4iS9QSpjXG4yMbeeq2nFWlOM9Uaqh07I7Dj9yfFJDQc7zWp0+btqCzHuCPkmcRz6+v3iLVlF/foZ4DMlmtjgysM2sR/CfIooPVPHsgWRYXs57GvqZcjsX/+JtnX5Ll8+eukxDUBayZk3FjLUdpzBRafGvQAlNjcLOzh1+yG0PpxGNQAV5e7VU9zr5nRm5p3hepSsO84P12QmyXv24BkRL1/Y8mNl1nE/+f25pYlua/jU54DNILu5ss3G9TUTfuXOXMLr+JKwztemynWA+C9TRhLbgpG3H+wnO1jScLyGE+WNrjbjiBzawp4xtt6hpa58p4xkxTr/F0OFD9GHGW0a/0c+MGKJYRYUtkQYkggpmisM3pynTJS719G8I/9lDdmgsDzeYL83XxGsuL5hin1wqzDM67hiOZe/BweRJwfbCzWWsbai3ce7cXJpe7CJakiLlJH053VGy4oBAV7demMfkn1UI+52IZglvn4I5krLeaM5h3syyJTCfvR/oIygwq3e3Z+6qWLX+cYVB3zoIMOLQjuKzl0zx254Z+UQwoAgaX11kctnLzVi+k3HbHoEIG1nEpNIK4G4ZYv9KZVvrUeeNQuFlUnW6Wxn0g5oR6DbIwBo3BF4w3wdh7JHR0vhX45ii8gyYAPZ9D2xkGQUdt5L/Im85xaBB7eKaQ8Tzkae4PHKHEmu+HKE79a+nNXwjWOXae8iBs3pbJwUe5TE1P7oZd3KDEjB4DVCpWXRNz5Vh4/83v1FQRXcgwQRY/WGPgp3soy/cmZrnYM8IzOCHIaeqhHqKTMVaQcW9rvfvFDF71HzMJGA4dAMM8WsoeLL3ON/nYXw8PJVhr6OjU628pscy3e6G5ZULSeu8SA==|920
+}//uRY7c6YtAty+PgnXOZV+MCew8e5R/Emx/2I53b7jjb0+mEiCmVpj4ijS1lUeyqcmxEKDi4Lk9Hwi4ZagqKeoPjYSd0vJjgh9pXvRMZRv9+s4yhR+pxLSQr4bp3alIUugqNGSQzEIUUE8NzaWhQfQyLr3DBVEXTUXpS25vjpR2mvJ5179nmucGcroMx+aZAXbybjh81nHoaQkXYtzVyweEE/aKmsNk1BZX+z1k/fjq450aJ8lw6A056AOP+yiTHWvulYFEFyq+bA1Ereo10+3tWVQLon9XW4YR9AigCdi9ZM0JmrrhleM+LFjeF/+3gIc9w7/9JxOwNLH/FqD5/UOF64X5qaAr8N4181GQ4mSrBtPAh6voiEHshF4NzH+4juk5tumPU3o5z/KunD9UNmjtCHYlP/ouJuWhK2ahccqw/Dq//lecwADgIXVS60kQsuxvaAJCrPuXYv60r77XDkH2PCu/ybv82GcM+hO4BBbxC/GW+B0aTiVX+38p2jWX2Usi5rV9MDaKjapfTyHkTGPC8W2N0KppC5audP7ty8x9qDzlwufcikmLIVbjJel8c12THcWCeR8l8Kg2Ff3vT3LbARdtbFS4qiOPgjlqnR0eP1wcsO1TK9MLD6r0hKh2t6S7b0wvfOgleuE5ABY7NJ6JzfNKSyDH7buW5dt9Py9L8iQPIr/mpfHq3Jp0LOeCairX85AetN3V7GUm58cxnPgU13M9imqj7bWhj3FX1MZykN1ELorGTHx+G7UEHHedezqkm/ZDcVkvqks8uuI0cjhSczyDxwBaFzeFhtaIiDoFZXhwItoD5IlyWHiEdDwnPmB/pyjNLd6Ov7Ecs2hMlh71uW7rULYwBiE7cpucF2Cng7NJ2/3VufE0EeiXvYW4zoNcaHZ6kRpp5YXqPqMdFmSRw==|920
